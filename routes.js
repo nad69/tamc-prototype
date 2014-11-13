@@ -52,6 +52,15 @@ module.exports = {
           res.render('tamc_pre-reg_v1/calc3', 
             {'assetPath' : assetPath });
       });
+          app.get('/start', function (req, res) {
+          res.render('tamc_pre-reg_v1/start', 
+            {'assetPath' : assetPath });
+      });
+
+           app.get('/start2', function (req, res) {
+          res.render('tamc_pre-reg_v1/start2', 
+            {'assetPath' : assetPath });
+      });
 
     }
 }
