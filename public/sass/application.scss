@@ -21,3 +21,20 @@ article ul {
 list-style-type: circle;
 list-style-image: url(https://assets.digital.cabinet-office.gov.uk/static/bullet-disc-5px-4180cb91fb35028365a59ddfcfd36e34.gif);
 }
+
+.bullet-points{
+	margin-left: 20px;
+	list-style: disc;
+}
+
+#global-breadcrumb{
+	margin-top: 30px;
+
+	li{
+		display: inline;
+		padding-right:10px;
+	}
+
+}
+
+	fieldset strong{font-weight:900}

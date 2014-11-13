@@ -1,0 +1,69 @@
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#yes-earn-less").click(function(){
+    $("#earn-less").show();
+    $("#earn-more").hide();
+  });
+  $("#no-earn-more").click(function(){
+    $("#earn-less").hide();
+    $("#earn-more").show();
+  });
+});
+</script>
+
+<main id="content" role="main">
+  <div class="inner-block">
+    <div id="global-breadcrumb" class="header-context">
+      <ol role="breadcrumbs" class="group">
+        <li><a href="/">Home</a></li>
+        <li>&#62;</li>
+        <li><a href="/browse/citizenship">Transferrable allowances</a></li>
+      </ol>
+    </div>
+
+    <h1 class="heading-large">Am I eligible?</h1>
+  <fieldset class="inline">
+    <p>Does one of you earn <strong>less than</strong> £42,285?</p>
+    <div class="form-group">
+    <label class="block-label" for="radio-inline-1">
+      <input id="yes-earn-less" type="radio" name="radio-inline-group" value="Yes">
+      Yes
+    </label>
+    <label class="block-label" for="radio-inline-2">
+      <input id="no-earn-more" type="radio" name="radio-inline-group" value="No">
+      No
+    </label>
+    
+
+
+  </fieldset>
+   <fieldset class="inline">
+  <div id="earn-less" style="display:none">
+    <div class="panel-indent">
+    <p>
+      You might benefit from a transfer allowance, so it's worth pre-registering.
+    </p>
+  </div>
+
+         <a href="calc1" button class="button">Next</a>
+        </div>
+    </div>
+    <div id="earn-more" style="display:none">
+         <div class="panel-indent">
+    <p>
+      You probably won't benefit from a transfer of allowance, so it's not worth continuing.
+    </p>
+  </div>
+        </div>
+
+</fieldset>
+  </main>
+{{/content}}
+
+{{/layout}}
