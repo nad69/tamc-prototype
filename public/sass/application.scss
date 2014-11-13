@@ -13,28 +13,35 @@
 
 // Your styles here
 
-.breadcrumb ol li a {
-color: #0b0c0c;
+#breadCrumbs {
+    list-style: none outside none;
+    margin: 0;
+    padding: 20px 100px 0 5px;
+}
+#breadCrumbs li {
+    color:#666;
+    display: inline;
+    padding: 1px 0 2px 5px;
+}
+#breadCrumbs li a{
+	font-weight:800;
+}
+#breadCrumbs li a:hover
+{
+	text-decoration:none;
+	color:#666666;
 }
 
-article ul {
-list-style-type: circle;
-list-style-image: url(https://assets.digital.cabinet-office.gov.uk/static/bullet-disc-5px-4180cb91fb35028365a59ddfcfd36e34.gif);
+/**Form elements**/
+.asterisk{ 
+color:#DC322F;
+font-size: 1.3em; 
 }
 
-.bullet-points{
-	margin-left: 20px;
-	list-style: disc;
+legend
+{
+	font-size: 1.2em;
 }
-
-#global-breadcrumb{
-	margin-top: 30px;
-
-	li{
-		display: inline;
-		padding-right:10px;
-	}
-
-}
-
-	fieldset strong{font-weight:900}
+.required label:after { 
+content:"*";
+color:#DC322F; }
