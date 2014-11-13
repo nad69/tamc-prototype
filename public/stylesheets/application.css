@@ -1145,22 +1145,31 @@ ul li, ol li {
       padding-left: 30px;
       padding-right: 30px; } }
 
-.breadcrumb ol li a {
-  color: #0b0c0c; }
+#breadCrumbs {
+  list-style: none outside none;
+  margin: 0;
+  padding: 20px 100px 0 5px; }
 
-article ul {
-  list-style-type: circle;
-  list-style-image: url(https://assets.digital.cabinet-office.gov.uk/static/bullet-disc-5px-4180cb91fb35028365a59ddfcfd36e34.gif); }
+#breadCrumbs li {
+  color: #666;
+  display: inline;
+  padding: 1px 0 2px 5px; }
 
-.bullet-points {
-  margin-left: 20px;
-  list-style: disc; }
+#breadCrumbs li a {
+  font-weight: 800; }
 
-#global-breadcrumb {
-  margin-top: 30px; }
-  #global-breadcrumb li {
-    display: inline;
-    padding-right: 10px; }
+#breadCrumbs li a:hover {
+  text-decoration: none;
+  color: #666666; }
 
-fieldset strong {
-  font-weight: 900; }
+/**Form elements**/
+.asterisk {
+  color: #DC322F;
+  font-size: 1.3em; }
+
+legend {
+  font-size: 1.2em; }
+
+.required label:after {
+  content: "*";
+  color: #DC322F; }
