@@ -19,17 +19,12 @@ $(document).ready(function(){
 
 <main id="content" role="main">
   <div class="inner-block">
-    <div id="global-breadcrumb" class="header-context">
-      <ol role="breadcrumbs" class="group">
-        <li><a href="/">Home</a></li>
-        <li>&#62;</li>
-        <li><a href="/browse/citizenship">Transferrable allowances</a></li>
-      </ol>
+    <div class="step">
+      <p>Step 1 of 3</p>
+      <h2 class="heading-large"></h2>
     </div>
-
-    <h1 class="heading-large">Am I eligible?</h1>
   <fieldset class="inline">
-    <p>Does one of you earn <strong>less than</strong> £9,450?</p>
+    <h2 class="heading-large">Does one of you earn less than £9,450?</h2>
     <div class="form-group">
     <label class="block-label" for="radio-inline-1">
       <input id="yes-earn-less" type="radio" name="radio-inline-group" value="Yes">
@@ -41,25 +36,26 @@ $(document).ready(function(){
     </label>
     
 
-
   </fieldset>
    <fieldset class="inline">
   <div id="earn-less" style="display:none">
-    <div class="panel-indent">
-    <p>
-      You might benefit from a transfer allowance, so it's worth pre-registering.
-    </p>
-  </div>
-
          <a href="calc3" button class="button">Next</a>
         </div>
     </div>
     <div id="earn-more" style="display:none">
-         <div class="panel-indent">
-    <p>
-      You probably won't benefit from a transfer of allowance, so it's not worth continuing.
-    </p>
-  </div>
+    <h2 class="heading-large">Does one of you earn between £9,450 and £10,499?</h2>
+   <div class="form-group">
+    <label class="block-label" for="radio-inline-1">
+      <input id="yes-earn-less" type="radio" name="radio-inline-group" value="Yes">
+      Yes
+    </label>
+    <label class="block-label" for="radio-inline-2">
+      <input id="no-earn-more" type="radio" name="radio-inline-group" value="No">
+      No
+    </label>
+    <p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you can receive depends on your earnings.</p>
+        </div>
+    <a href="calc3" button class="button">Next</a>
         </div>
 
 </fieldset>

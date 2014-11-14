@@ -11,45 +11,39 @@
     <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
     <li>Your details</li>
     </ul>
-    <h1 class="heading-large">Pre-registration form</h1>
-    Please use the form below to provide details for Pre-Registration for this service.
-     <p>Fields marked with <span class="asterisk"> * </span> must be provided.</p>
+    <h1 class="heading-large">Provide your details</h1>
+    <p>You can register to receive an alert when this service becomes available.</p>
+    <p>You're not applying to transfer any tax free amounts at this stage.</p>
  <!--Registration -->
 <form action="/" method="POST">
   <fieldset>
-  <legend>Your Details</legend>
-    <label class="form-checkbox" for="checkbox-behalf-of-other" tabindex="1">
-      <input id="checkbox-behalf-of-other" type="checkbox" value="on someones behalf">
-      (Tick this box if you are filling this form in on behalf of someone else)
-    </label>
     <div class="form-group required">
       <label class="form-label" for="first-name">First name</label>
-      <input class="form-control" id="first-name" type="text" data-validation="required" data-validation-error-msg="Please provide your First name" tabindex="2">
+      <input class="form-control" id="first-name" type="text" data-validation="required" data-validation-error-msg="Please provide your first name" tabindex="2">
     </div>
     <div class="form-group required">
       <label class="form-label" for="last-name">Last name</label>
-      <input class="form-control" id="last-name" type="text" data-validation="required" data-validation-error-msg="Please provide your Surname/Last name" tabindex="3">
+      <input class="form-control" id="last-name" type="text" data-validation="required" data-validation-error-msg="Please provide your last name" tabindex="3">
     </div>
     <div class="form-group required">
       <label class="form-label" for="email-address">Email</label>
-      <input class="form-control" id="email-address" type="text" data-validation="email" data-validation-error-msg="Please provide a valid Email" tabindex="4">
-    </div>
-        <div class="form-group">
-      <label class="form-label" for="Telephone Number">Telephone Number</label>
-      <input class="form-control" id="Telephone-Number" type="text" tabindex="5">
+      <input class="form-control" id="email-address" type="text" data-validation="email" data-validation-error-msg="Please provide a valid email" tabindex="4">
     </div>
     <div class="form-group">
-      <label class="form-label" for="Mobile Number">Mobile Number</label>
+      <label class="form-label" for="Mobile Number">Mobile</label>
       <input class="form-control" id="mobile-Number" type="text" tabindex="6">
     </div>
   </fieldset>
   <fieldset>
-    <legend>Follow up</legend>
     <div class="form-group">Tick this box if you are happy for us to contact you for research purposes</div>
     <label class="label" for="follow-up">Yes please contact me
-    <input id="checkbox-telephone-number" type="checkbox" value="agree-to-research" tabindex="5"></label> 
+    <input id="checkbox-telephone-number" type="checkbox" value="agree-to-research" tabindex="5"></label>
+        <label class="form-checkbox" for="checkbox-behalf-of-other" tabindex="1">
+      <input id="checkbox-behalf-of-other" type="checkbox" value="on someones behalf">
+      (Tick this box if you are filling this form in on behalf of someone else)
+    </label> 
   </fieldset>
-  <div class="form-group"><a href="confirm" class="button">Submit pre-registration</a></div>
+  <div class="form-group"><a href="confirm" class="button">Submit</a></div>
 </form>
 </main>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
