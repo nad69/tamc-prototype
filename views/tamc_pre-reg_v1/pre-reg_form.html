@@ -1,54 +1,145 @@
+
 {{<layout}}
 
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
+<script type="text/javascript" src="http://www.websitecodetutorials.com/code/jquery-plugins/jquery.js"></script>
+<script type="text/javascript" src="http://www.websitecodetutorials.com/code/jquery-plugins/validation.js"></script>
 <main id="content" role="main">
-  <div class="inner-block">
-    <ul id="breadCrumbs">
-    <li><a href="/">Home</a></li><span> > </span>
-    <li><a href="/start">Transferrable allowances</a></li><span> > </span>
-    <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
-    <li>Your details</li>
-    </ul>
-    <h1 class="heading-large">Provide your details</h1>
-    <p>You can register to receive an alert when this service becomes available.</p>
-    <p>You're not applying to transfer any tax free amounts at this stage.</p>
- <!--Registration -->
-<form action="/" method="POST">
-  <fieldset>
-    <div class="form-group required">
-      <label class="form-label" for="first-name">First name</label>
-      <input class="form-control" id="first-name" type="text" data-validation="required" data-validation-error-msg="Please provide your first name" tabindex="2">
-    </div>
-    <div class="form-group required">
-      <label class="form-label" for="last-name">Last name</label>
-      <input class="form-control" id="last-name" type="text" data-validation="required" data-validation-error-msg="Please provide your last name" tabindex="3">
-    </div>
-    <div class="form-group required">
-      <label class="form-label" for="email-address">Email</label>
-      <input class="form-control" id="email-address" type="text" data-validation="email" data-validation-error-msg="Please provide a valid email" tabindex="4">
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="Mobile Number">Mobile</label>
-      <input class="form-control" id="mobile-Number" type="text" tabindex="6">
-    </div>
+  <script type="text/javascript">
+/* Fire Valaidate */
+  $(document).ready(function(){
+    $.validator.addMethod("nourl", 
+                    function(value, element) {
+                         return !/http\:\/\/|www\.|link\=|url\=/.test(value);
+                        }, 
+                        "No URL's"
+      );
+    $(".form.b").validate({
+        rules: {
+          firstName: {
+          required: true
+          },
+          lastName: {
+          required: true
+          },
+          email: {
+          required: true,
+          email: true
+          },
+          comments: {
+          required: true,
+          minlength: 5,
+          nourl: true
+          }
+        },
+        messages: {
+          firstName: "Enter your first name",
+          lastName: "Enter your last name ",
+          email: "Valid Email Required",
+          comments: "Required Field + No URL's"
+        }
+      });       
+  });
+</script>
+<style type="text/css">
+/* ----------------- Form ----------------- */
+
+/* ----------- jQuery Validation ----------- */
+
+/* --- Form B --- */
+.form.b label.error {
+    float:right;
+    padding-right:530px;
+margin:0;
+color:red;
+}
+input.error
+{
+  border:red 3px solid;
+}
+label.error{
+    border-left: 4px solid #df3034;
+    clear: both;
+    color: #df3034;
+    display: none;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 1em 0 1em -14px;
+    padding: 10px 10px 10px 5px;
+    float:left;
+    color: red;
+}
+
+
+
+</style>
+<!--[if IE]>
+<style type="text/css">
+.form.d label.error {top:-38px;}
+.form.d label.error:before {content:"";}
+</style>
+<![endif]-->
+<div class="inner-block">
+  <ul id="breadCrumbs">
+  <li><a href="/">Home</a></li><span> > </span>
+  <li><a href="/start">Transferrable allowances</a></li><span> > </span>
+  <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
+  <li>Your details</li>
+  </ul>
+  <h1 class="heading-large">Provide your details</h1>
+  <p>You can register to receive an alert when this service becomes available.</p>
+  <p>You're not applying to transfer any tax free amounts at this stage.</p>
+  <form class="form b" method="get" action="confirm">
+<fieldset class="validate">
+  <div class="form-group">
+    <label class="form-label" for="name_firstName">First name</label>
+    <input type="text" id="firstName" name="firstName" class="nudge">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="name_lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="email">Email</label>
+    <input type="text" id="email" name="email">
+  </div> 
+  <div class="form-group">
+  <label class="form-label" for="mobile">Mobile</label>
+  <input type="text" id="mobile" name="mobile">
+  </div> 
+</fieldset>
+
+<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
+ <div class="form-group"> 
+  <h2 class="heading-medium">Would you like to help us research this service?</h2>
+<label for="yes-contact-me" class="block-label" >
+<input  type="radio" id="yes-contact-me"  name="previousName.hasPreviousName" value="true" class="radio validate" data-validation-name="yes-contact-me" data-validation-type="field" data-validation-rules="nonEmpty" tab-index="6">Yes<span class="visuallyhidden"> I’m happy for you to contact me </span></label>
+<label for="previousName_hasPreviousName_false" class="block-label">
+  <input type="radio" id="previousName_hasPreviousName_false" name="previousName.hasPreviousName" value="false" class="radio validate" data-validation-name="previousNo" data-validation-type="field"  data-validation-rules="nonEmpty" tab-index="7">No<span class="visuallyhidden">I'm not happy yo cone co</span>
+</label>
+</div>
+</fieldset>
+
+
+<fieldset class="inline">
+  <div class="form-group">
+    <h2 class="heading-medium">Are you filling out this form on behalf of another couple?<br/> For example, your parents or friends.</h2>
+    <label class="block-label" for="yes-on-behalf-of-someone">
+    <input id="yes-on-behalf-of-someone" type="radio" name="Are you filling out this form on behalf of another couple" value="Yes">
+    Yes
+    </label>
+    <label class="block-label" for="no-dont-contact-me">
+    <input id="no" type="radio" name="Are you filling out this form on behalf of another couple" value="No">
+    No
+    </label>
+    </div>  
   </fieldset>
-  <fieldset>
-    <div class="form-group">Tick this box if you are happy for us to contact you for research purposes</div>
-    <label class="label" for="follow-up">Yes please contact me
-    <input id="checkbox-telephone-number" type="checkbox" value="agree-to-research" tabindex="5"></label>
-        <label class="form-checkbox" for="checkbox-behalf-of-other" tabindex="1">
-      <input id="checkbox-behalf-of-other" type="checkbox" value="on someones behalf">
-      (Tick this box if you are filling this form in on behalf of someone else)
-    </label> 
-  </fieldset>
-  <div class="form-group"><a href="confirm" class="button">Submit</a></div>
-</form>
+
+
+  <input type="submit" class="button next validation-submit" value="Submit">
 </main>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
-<script> $.validate(); </script>
 {{/content}}
 
 {{/layout}}
