@@ -1,64 +1,83 @@
 {{<layout}}
-
+    {{$propositionHeader}}
+      {{>propositional_navigation_alpha}}
+    {{/propositionHeader}}
+{{$headerClass}}with-proposition{{/headerClass}}
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("#yes-earn-less").click(function(){
+  $("#radio-inline-1").click(function(){
     $("#earn-less").show();
     $("#earn-more").hide();
   });
-  $("#no-earn-more").click(function(){
+  $("#radio-inline-2").click(function(){
     $("#earn-less").hide();
     $("#earn-more").show();
   });
+
+
+
+  $("#radio-inline-3").click(function(){
+    $("#noBetween").hide();
+    $("#yesBetween").show();
+  });
+  $("#radio-inline-4").click(function(){
+    $("#yesBetween").hide();
+    $("#noBetween").show();
+  });
+  
+
 });
 </script>
-
 <main id="content" role="main">
-  <div class="inner-block">
-    <div class="step">
-      <p>Step 1 of 3</p>
-      <h2 class="heading-large"></h2>
-    </div>
-  <fieldset class="inline">
+
+
+
+
+<div class="inner-block">
+  <a class="back-to-previous" href="calc1">Back<span class="visuallyhidden"> to the previous question</span></a>
+  <ul id="breadCrumbs">
+    <li><a href="/">Home</a></li><span> > </span>
+    <li><a href="/start">Transferrable allowances</a></li><span> > </span>
+    <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
+    <li>Your details</li>
+  </ul>
+<fieldset class="inline">
     <h2 class="heading-large">Does one of you earn less than £9,450?</h2>
-    <div class="form-group">
     <label class="block-label" for="radio-inline-1">
-      <input id="yes-earn-less" type="radio" name="radio-inline-group" value="Yes">
-      Yes
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
     </label>
     <label class="block-label" for="radio-inline-2">
-      <input id="no-earn-more" type="radio" name="radio-inline-group" value="No">
-      No
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
     </label>
-    
 
   </fieldset>
-   <fieldset class="inline">
+  <fieldset class="inline">
   <div id="earn-less" style="display:none">
-         <a href="calc3" button class="button">Next</a>
-        </div>
-    </div>
-    <div id="earn-more" style="display:none">
-    <h2 class="heading-large">Does one of you earn between £9,450 and £10,499?</h2>
-   <div class="form-group">
-    <label class="block-label" for="radio-inline-1">
-      <input id="yes-earn-less" type="radio" name="radio-inline-group" value="Yes">
-      Yes
-    </label>
-    <label class="block-label" for="radio-inline-2">
-      <input id="no-earn-more" type="radio" name="radio-inline-group" value="No">
-      No
-    </label>
-    <p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you can receive depends on your earnings.</p>
-        </div>
     <a href="calc3" button class="button">Next</a>
-        </div>
-
+  </div>
 </fieldset>
+ <fieldset class="inline">
+<div id="earn-more" style="display:none">
+  <h2 class="heading-large">Does one of you earn between £9,450 and £10,499?</h2>
+   <div class="form-group">
+    <label class="block-label" for="radio-inline-3">
+      <input id="radio-inline-3" type="radio" name="radio-inline-group2" value="Yes">Yes
+    </label>
+    <label class="block-label" for="radio-inline-4">
+      <input id="radio-inline-4" type="radio" name="radio-inline-group2" value="No">No
+    </label>
+    <div class="panel-indent" id="yesBetween" style="display:none"><p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you can receive depends on your earnings.</p>
+    <a href="calc3" button class="button">Next</a>
+  </div>
+      <div class="panel-indent" id="noBetween" style="display:none"><a href="calc3" button class="button">Next</a>
+  </div>
+</div>
+
+</fieldset></div>
   </main>
 {{/content}}
 
