@@ -1162,14 +1162,48 @@ ul li, ol li {
   text-decoration: none;
   color: #666666; }
 
-/**Form elements**/
-.asterisk {
-  color: #DC322F;
-  font-size: 1.3em; }
+.heading-medium {
+  margin-bottom: 0.83333em;
+  margin-top: 0.5em; }
 
-legend {
-  font-size: 1.2em; }
+a.back-to-previous, a.back-to-previous:active, a.back-to-previous:hover, a.back-to-previous:focus {
+  color: #0b0c0c; }
 
-.required label:after {
-  content: "*";
-  color: #DC322F; }
+form .back-to-previous {
+  margin: 0;
+  position: absolute; }
+
+a:link {
+  color: #005ea5; }
+
+.back-to-previous {
+  background: url("https://assets.registertovote.service.gov.uk/assets/images/icon-caret-left.png") no-repeat scroll left 0.2em rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #0b0c0c;
+  display: block;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 2em 0 0 0;
+  overflow: hidden;
+  padding-left: 0.75em;
+  position: static;
+  text-align: right;
+  text-decoration: none;
+  text-transform: none;
+  width: 2.25em; }
+
+main header p {
+  clear: left;
+  text-align: left; }
+
+main header p {
+  color: #6f777b;
+  margin-bottom: 0;
+  padding-left: 4.5em; }
+
+main header, main header p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  text-transform: none; }
