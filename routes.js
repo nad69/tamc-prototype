@@ -60,6 +60,12 @@ module.exports = {
            app.get('/start2', function (req, res) {
           res.render('tamc_pre-reg_v1/start2', 
             {'assetPath' : assetPath });
+
+      });
+
+           app.get('/startv3', function (req, res) {
+          res.render('tamc_pre-reg_v1/startv3', 
+            {'assetPath' : assetPath });
       });
 
     }
