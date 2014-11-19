@@ -1,6 +1,9 @@
-
 {{<layout}}
-
+    {{$propositionHeader}}
+      {{>propositional_navigation_alpha}}
+    {{/propositionHeader}}
+{{$pageTitle}}Index{{/pageTitle}}
+{{$headerClass}}with-proposition{{/headerClass}}
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
@@ -44,14 +47,11 @@
   });
 </script>
 <style type="text/css">
-/* ----------------- Form ----------------- */
-
-/* ----------- jQuery Validation ----------- */
 
 /* --- Form B --- */
 .form.b label.error {
     float:right;
-    padding-right:530px;
+    padding-right:285px;
 margin:0;
 color:red;
 }
@@ -71,9 +71,6 @@ label.error{
     float:left;
     color: red;
 }
-
-
-
 </style>
 <!--[if IE]>
 <style type="text/css">
@@ -82,12 +79,13 @@ label.error{
 </style>
 <![endif]-->
 <div class="inner-block">
-  <ul id="breadCrumbs">
-  <li><a href="/">Home</a></li><span> > </span>
-  <li><a href="/start">Transferrable allowances</a></li><span> > </span>
-  <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
-  <li>Your details</li>
-  </ul>
+<div id="global-breadcrumb" class="header-context">
+  <ol class="group" role="breadcrumbs">
+    <li><a href="start">Home</a></li>
+    <li><a href="start">Your details</a></li>
+    <li>Register</li>
+  </ol>
+</div>
   <h1 class="heading-large">Provide your details</h1>
   <p>You can register to receive an alert when this service becomes available.</p>
   <p>You're not applying to transfer any tax free amounts at this stage.</p>
@@ -95,19 +93,19 @@ label.error{
 <fieldset class="validate">
   <div class="form-group">
     <label class="form-label" for="name_firstName">First name</label>
-    <input type="text" id="firstName" name="firstName" class="nudge">
+    <input type="text" class="form-control" id="firstName" name="firstName" class="nudge">
   </div>
   <div class="form-group">
     <label class="form-label" for="name_lastName">Last Name</label>
-    <input type="text" id="lastName" name="lastName">
+    <input type="text" class="form-control" id="lastName" name="lastName">
   </div>
   <div class="form-group">
     <label class="form-label" for="email">Email</label>
-    <input type="text" id="email" name="email">
+    <input type="text" class="form-control" id="email" name="email">
   </div> 
   <div class="form-group">
   <label class="form-label" for="mobile">Mobile</label>
-  <input type="text" id="mobile" name="mobile">
+  <input type="text" class="form-control" id="mobile" name="mobile">
   </div> 
 </fieldset>
 
@@ -131,13 +129,11 @@ label.error{
     Yes
     </label>
     <label class="block-label" for="no-dont-contact-me">
-    <input id="no" type="radio" name="Are you filling out this form on behalf of another couple" value="No">
+    <input id="no-dont-contact-me" type="radio" name="Are you filling out this form on behalf of another couple" value="No">
     No
     </label>
     </div>  
   </fieldset>
-
-
   <input type="submit" class="button next validation-submit" value="Submit">
 </main>
 {{/content}}
