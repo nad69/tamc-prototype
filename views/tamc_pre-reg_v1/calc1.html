@@ -32,14 +32,13 @@ $(document).ready(function(){
 
 <main id="content" role="main">
   <div class="inner-block">
-
-<div id="global-breadcrumb" class="header-context">
-  <ol class="group" role="breadcrumbs">
-    <li><a href="start2">Home</a></li>
-    <li>Your details</li>
-  </ol>
-</div>
-<a class="back-to-previous" href="start2">Back<span class="visuallyhidden"> to the previous question</span></a>
+<a class="back-to-previous" href="#">Back<span class="visuallyhidden"> to the previous question</span></a>
+<ul id="breadCrumbs">
+  <li><a href="/">Home</a></li><span> > </span>
+  <li><a href="/start">Transferrable allowances</a></li><span> > </span>
+  <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
+  <li>Your details</li>
+  </ul>
   <h2 class="heading-large">Do either of you earn less than £42,285?</h2>
   <fieldset class="inline">
     <div class="form-group">
@@ -59,7 +58,7 @@ $(document).ready(function(){
   <fieldset class="inline">
   <div id="earn-more" style="display:none">
     <div class="panel-indent">
-      <p>You cannot transfer part of your tax free allowance because one of you is a <a href="https://www.gov.uk/income-tax-rates/current-rates-and-allowances" rel="external" target="_new">higher rate tax payer</a>.</p>
+      <p>You cannot transfer part of your tax free allowance because one of you is a <a href="https://www.gov.uk/income-tax-rates/current-rates-and-allowances">higher rate tax payer</a>.</p>
     </div>
   </div>
   </fieldset>

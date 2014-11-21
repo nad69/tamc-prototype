@@ -33,29 +33,28 @@ $(document).ready(function(){
 });
 </script>
 <main id="content" role="main">
+
+
+
+
 <div class="inner-block">
-<div id="global-breadcrumb" class="header-context">
-  <ol class="group" role="breadcrumbs">
-    <li><a href="start2">Home</a></li>
+  <a class="back-to-previous" href="calc1">Back<span class="visuallyhidden"> to the previous question</span></a>
+  <ul id="breadCrumbs">
+    <li><a href="/">Home</a></li><span> > </span>
+    <li><a href="/start">Transferrable allowances</a></li><span> > </span>
+    <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
     <li>Your details</li>
-  </ol>
-</div>
-<a class="back-to-previous" href="calc1">Back<span class="visuallyhidden"> to the previous question</span></a>   
-  <h2 class="heading-large">Does one of you earn less than £9,450?</h2>
+  </ul>
 <fieldset class="inline">
-  <div class="form-group">
+    <h2 class="heading-large">Does one of you earn less than £9,450?</h2>
     <label class="block-label" for="radio-inline-1">
       <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
     </label>
     <label class="block-label" for="radio-inline-2">
       <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
     </label>
-  </div>
+
   </fieldset>
-
-
-
-
   <fieldset class="inline">
   <div id="earn-less" style="display:none">
     <a href="calc3" button class="button">Next</a>
@@ -71,23 +70,14 @@ $(document).ready(function(){
     <label class="block-label" for="radio-inline-4">
       <input id="radio-inline-4" type="radio" name="radio-inline-group2" value="No">No
     </label>
-<div id="yesBetween" style="display:none">
-  <div class="form-group">
-    <div class="panel-indent"><p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you can receive depends on your earnings.</p>
-    </div>
+    <div class="panel-indent" id="yesBetween" style="display:none"><p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you can receive depends on your earnings.</p>
     <a href="calc3" button class="button">Next</a>
-  </div><!--Panel Close-->
-</div><!--Close Form Group-->
-</div><!--Close Hide show-->
-<div id="noBetween" style="display:none">
-  <div class="form-group">
-    <a href="calc3" button class="button">Next</a>
-</div><!--Close Form Group-->
-</div><!--Close Hide show-->
-
-
-</fieldset>
+  </div>
+      <div class="panel-indent" id="noBetween" style="display:none"><a href="calc3" button class="button">Next</a>
+  </div>
 </div>
+
+</fieldset></div>
   </main>
 {{/content}}
 

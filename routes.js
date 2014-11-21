@@ -60,6 +60,26 @@ module.exports = {
            app.get('/start2', function (req, res) {
           res.render('tamc_pre-reg_v1/start2', 
             {'assetPath' : assetPath });
+
+      });
+
+           app.get('/startv3', function (req, res) {
+          res.render('tamc_pre-reg_v1/startv3', 
+            {'assetPath' : assetPath });
+      });
+
+
+      /* Full app pages */
+
+            app.get('/start-app-reg', function (req, res) {
+          res.render('tamc_app_v1/start-app-reg', 
+            {'assetPath' : assetPath });
+
+      });
+
+            app.get('/start-app-unreg', function (req, res) {
+          res.render('tamc_app_v1/start-app-unreg', 
+            {'assetPath' : assetPath });
       });
 
     }
