@@ -18,8 +18,6 @@ $(document).ready(function(){
     $("#earn-more").show();
   });
 
-
-
   $("#radio-inline-3").click(function(){
     $("#noBetween").hide();
     $("#yesBetween").show();
@@ -33,33 +31,30 @@ $(document).ready(function(){
 });
 </script>
 <main id="content" role="main">
-
-
-
-
 <div class="inner-block">
   <a class="back-to-previous" href="calc1">Back<span class="visuallyhidden"> to the previous question</span></a>
-<div class="header-context" id="global-breadcrumb">
+<div id="global-breadcrumb" class="header-context">
         <ol class="group "role="breadcrumbs">
   <li><a href="/">Home</a></li>
   <li><a href="/start">Transferrable allowances</a></li>
   <li><a href="/eligibility_v1">Am I eligible?</a></li>
   <li>Your details</li>
-  </ul>
+  </ol>
 <fieldset class="inline">
-    <h2 class="heading-large">Does only one of you earn less than £9,450?</h2>
-    <label class="block-label" for="radio-inline-1">
-      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
-    </label>
-    <label class="block-label" for="radio-inline-2">
-      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
-    </label>
-
-  </fieldset>
+  <h2 class="heading-large">Does only one of you earn less than £9,450?</h2>
+  <label class="block-label" for="radio-inline-1">
+    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
+  </label>
+  <label class="block-label" for="radio-inline-2">
+    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
+  </label>
+</fieldset>
   <fieldset class="inline">
   <div id="earn-less" style="display:none">
-    <a href="pre-reg_form" button class="button">Next</a>
+    <div class="form-group">
+    <a href="pre-reg_form" button class="button" style="margin-top:25px">Next</a>
   </div>
+</div>
 </fieldset>
  <fieldset class="inline">
 <div id="earn-more" style="display:none">
@@ -71,7 +66,11 @@ $(document).ready(function(){
     <label class="block-label" for="radio-inline-4">
       <input id="radio-inline-4" type="radio" name="radio-inline-group2" value="No">No
     </label>
-    <div class="panel-indent" id="yesBetween" style="display:none"><p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you will receive depends on your earnings.</p>
+
+<div id="yesBetween" style="display:none">
+    <div class="form-group">
+    <div class="panel-indent"><p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you will receive depends on your earnings.</p>
+    </div>  
     <a href="pre-reg_form" button class="button">Next</a>
   </div>
       <div class="panel-indent" id="noBetween" style="display:none"><a href="pre-reg_form" button class="button">Next</a>
