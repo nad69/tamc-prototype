@@ -82,15 +82,15 @@ label.error{
 </style>
 <![endif]-->
 <div class="inner-block">
-  <ul id="breadCrumbs">
-  <li><a href="/">Home</a></li><span> > </span>
-  <li><a href="/start">Transferrable allowances</a></li><span> > </span>
-  <li><a href="/eligibility_v1">Am I eligible?</a></li><span> > </span>
+<div class="header-context" id="global-breadcrumb">
+        <ol class="group "role="breadcrumbs">
+  <li><a href="/">Home</a></li>
+  <li><a href="/start">Transferrable allowances</a></li>
+  <li><a href="/eligibility_v1">Am I eligible?</a></li>
   <li>Your details</li>
   </ul>
-  <h1 class="heading-large">Provide your details</h1>
-  <p>By registering now you can receive an alert when this service becomes available.</p>
-  <p>You're not applying to transfer any tax free amounts at this stage.</p>
+  <h1 class="heading-xlarge">Provide your details</h1>
+  <p>By registering now you can receive an alert when this service becomes available. You're not applying to transfer any tax free amounts at this stage.</p>
   <form class="form b" method="get" action="confirm">
 <fieldset class="validate">
   <div class="form-group">
@@ -98,7 +98,7 @@ label.error{
     <input type="text" id="firstName" name="firstName" class="nudge">
   </div>
   <div class="form-group">
-    <label class="form-label" for="name_lastName">Last Name</label>
+    <label class="form-label" for="name_lastName">Last name</label>
     <input type="text" id="lastName" name="lastName">
   </div>
   <div class="form-group">
@@ -110,10 +110,9 @@ label.error{
   <input type="text" id="mobile" name="mobile">
   </div> 
 </fieldset>
-
 <fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
  <div class="form-group"> 
-  <h2 class="heading-medium">Would you like to help us research this service?</h2>
+  <h2 class="heading-large">Would you like to help us improve this service?</h2>
 <label for="yes-contact-me" class="block-label" >
 <input  type="radio" id="yes-contact-me"  name="previousName.hasPreviousName" value="true" class="radio validate" data-validation-name="yes-contact-me" data-validation-type="field" data-validation-rules="nonEmpty" tab-index="6">Yes<span class="visuallyhidden"> I’m happy for you to contact me </span></label>
 <label for="previousName_hasPreviousName_false" class="block-label">
@@ -125,7 +124,7 @@ label.error{
 
 <fieldset class="inline">
   <div class="form-group">
-    <h2 class="heading-medium">Are you filling out this form on behalf of another couple?<br/> For example, your parents or friends.</h2>
+    <h2 class="heading-large">Are you filling out this form on behalf of another couple?<br/> For example, your parents or friends.</h2>
     <label class="block-label" for="yes-on-behalf-of-someone">
     <input id="yes-on-behalf-of-someone" type="radio" name="Are you filling out this form on behalf of another couple" value="Yes">
     Yes
