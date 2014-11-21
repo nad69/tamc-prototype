@@ -68,6 +68,20 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+
+      /* Full app pages */
+
+            app.get('/start-app-reg', function (req, res) {
+          res.render('tamc_app_v1/start-app-reg', 
+            {'assetPath' : assetPath });
+
+      });
+
+            app.get('/start-app-unreg', function (req, res) {
+          res.render('tamc_app_v1/start-app-unreg', 
+            {'assetPath' : assetPath });
+      });
+
     }
 }
 

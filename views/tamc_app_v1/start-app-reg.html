@@ -1,0 +1,47 @@
+{{<govuk_template}}
+    {{$head}}
+      {{>head}}
+      <!-- Additional head code, CSS, JS specific only to this file here. If needed on other screens consider moving to separate file -->
+    {{/head}}
+   
+    {{$propositionHeader}}
+      {{>propositional_navigation_alpha}}
+    {{/propositionHeader}}
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
+   
+    {{$footerTop}}
+                {{>footer_links}}
+    {{/footerTop}}
+   
+    {{$pageTitle}}
+        Start
+    {{/pageTitle}}
+   
+    {{$content}}
+<main id="content" role="main">
+  <div id="global-breadcrumb" class="header-context">
+  <ol class="group" role="breadcrumbs">
+    <li><a href="start2">Home</a></li>
+  </ol>
+</div>
+        <h1 class="heading-xlarge">Apply for a tax reduction for your spouse<br>or partner</h1>
+        <div class="article-container group">
+          <article role="article" class="group">
+            <p class="lede">Hello Kavel.<br>You registered for this service on 14th March 2015. You can now apply to reduce the tax your spouse or partner pays by transferring your tax allowance to them.</p>
+            <div class="text">
+              <div class="panel-indent">
+              <p>This could reduce the tax they pay by up to £210</p>
+              </div>
+            </div>
+            <h2 class="heading-large">Before you start</h2>
+            <p>You'll need to know or have to hand:</p>
+            <ul class="list-bullet">
+              <li>your partner's full name, national insurance number and date of birth</li> 
+            </ul>  
+          </article>
+        </div>
+    <a href="pre-reg_form" button class="button button-get-started">Start now</a>
+</main>
+{{/content}}
+{{/govuk_template}}
