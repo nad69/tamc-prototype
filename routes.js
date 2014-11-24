@@ -25,6 +25,11 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+            app.get('/pre-reg_form2', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form2', 
+            {'assetPath' : assetPath });
+      });
+
 
       app.get('/confirm', function (req, res) {
           res.render('tamc_pre-reg_v1/confirm', 
@@ -66,19 +71,25 @@ module.exports = {
            app.get('/startv3', function (req, res) {
           res.render('tamc_pre-reg_v1/startv3', 
             {'assetPath' : assetPath });
+
+                });
+
+           app.get('/confirm2', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm2', 
+            {'assetPath' : assetPath });
       });
 
 
       /* Full app pages */
 
-            app.get('/start-app-reg', function (req, res) {
-          res.render('tamc_app_v1/start-app-reg', 
+            app.get('/start-app', function (req, res) {
+          res.render('tamc-app_v1/start-app', 
             {'assetPath' : assetPath });
 
       });
 
-            app.get('/start-app-unreg', function (req, res) {
-          res.render('tamc_app_v1/start-app-unreg', 
+            app.get('/start-app2', function (req, res) {
+          res.render('tamc-app_v1/start-app2', 
             {'assetPath' : assetPath });
       });
 
