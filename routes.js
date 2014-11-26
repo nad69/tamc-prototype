@@ -80,10 +80,10 @@ module.exports = {
       });
 
 
-      /* Full app pages */
+      /* v1 iteration 5 - NM/JK testers ready for fri 28/11/14 */
 
-            app.get('/start-app', function (req, res) {
-          res.render('tamc-app_v1/start-app', 
+            app.get('/eligibility', function (req, res) {
+          res.render('tamc_pre-reg_v1/eligibility', 
             {'assetPath' : assetPath });
 
       });
