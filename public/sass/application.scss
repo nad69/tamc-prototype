@@ -35,7 +35,11 @@
 #global-breadcrumb ol li a {
     color: #0b0c0c;
 }
-
+#global-breadcrumb ol li:last-child {
+    background-image: none;
+    margin-right: 0;
+}
+/**end of breadcrumbs***/
 .heading-medium {
     margin-bottom: 0.83333em;
     margin-top: .5em;
