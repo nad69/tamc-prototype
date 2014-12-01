@@ -1,0 +1,145 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+<script type="text/javascript" src="https://www.websitecodetutorials.com/code/jquery-plugins/jquery.js"></script>
+<script type="text/javascript" src="https://www.websitecodetutorials.com/code/jquery-plugins/validation.js"></script>
+<main id="content" role="main">
+  <script type="text/javascript">
+/* Fire Valaidate */
+  $(document).ready(function(){
+    $.validator.addMethod("nourl", 
+                    function(value, element) {
+                         return !/http\:\/\/|www\.|link\=|url\=/.test(value);
+                        }, 
+                        "No URL's"
+      );
+    $(".form.b").validate({
+        rules: {
+          firstName: {
+          required: true
+          },
+          lastName: {
+          required: true
+          },
+          email: {
+          required: true,
+          email: true
+          },
+          comments: {
+          required: true,
+          minlength: 5,
+          nourl: true
+          }
+        },
+        messages: {
+          firstName: "Enter your first name",
+          lastName: "Enter your last name ",
+          email: "Valid Email Required",
+          comments: "Required Field + No URL's"
+        }
+      });       
+  });
+</script>
+<style type="text/css">
+/* ----------------- Form ----------------- */
+
+/* ----------- jQuery Validation ----------- */
+
+/* --- Form B --- */
+.form.b label.error {
+    float:right;
+    padding-right:530px;
+margin:0;
+color:red;
+}
+input.error
+{
+  border:red 3px solid;
+}
+label.error{
+    border-left: 4px solid #df3034;
+    clear: both;
+    color: #df3034;
+    display: none;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 1em 0 1em -14px;
+    padding: 10px 10px 10px 5px;
+    float:left;
+    color: red;
+}
+
+
+
+</style>
+<!--[if IE]>
+<style type="text/css">
+.form.d label.error {top:-38px;}
+.form.d label.error:before {content:"";}
+</style>
+<![endif]-->
+<div class="inner-block">
+<div class="header-context" id="global-breadcrumb">
+        <ol class="group "role="breadcrumbs">
+  <li><a href="/start">Home</a></li>
+  <li>Your details</li>
+  </ol>
+</div>
+  <h1 class="heading-xlarge">Provide your details</h1>
+  <p>By registering now you can receive an alert when this service becomes available.<br>You're not applying to transfer any tax free amounts at this stage.</p>
+  <form class="form b" method="get" action="confirm">
+<fieldset class="validate">
+ <div class="form-group">
+    <label class="form-label" for="first-name-2">First name</label>
+    <input class="form-control" id="first-name-2" type="text">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="last-name-2">Last name</label>
+    <input class="form-control" id="last-name-2" type="text">
+  </div>
+   <div class="form-group">
+    <label class="form-label" for="email-2">Email</label>
+    <input class="form-control" id="email-2" type="text">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="mobile-2">Mobile</label>
+    <input class="form-control" id="mobile-2" type="text">
+  </div>
+
+</fieldset>
+
+<fieldset class="inline">
+  <div class="form-group">
+    <h2 class="heading-large">Are you filling out this form on behalf of another couple?<br/> For example, your parents or friends.</h2>
+    <label class="block-label" for="yes-on-behalf-of-someone">
+    <input id="yes-on-behalf-of-someone" type="radio" name="Are you filling out this form on behalf of another couple" value="Yes">
+    Yes
+    </label>
+    <label class="block-label" for="no-dont-contact-me">
+    <input id="no" type="radio" name="Are you filling out this form on behalf of another couple" value="No">
+    No
+    </label>
+    </div>  
+  </fieldset>
+
+<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
+ <div class="form-group"> 
+  <h2 class="heading-large">Would you like to help us improve this service?</h2>
+<label for="yes-contact-me" class="block-label" >
+<input  type="radio" id="yes-contact-me"  name="previousName.hasPreviousName" value="true" class="radio validate" data-validation-name="yes-contact-me" data-validation-type="field" data-validation-rules="nonEmpty" tab-index="6">Yes<span class="visuallyhidden"> I’m happy for you to contact me </span></label>
+<label for="previousName_hasPreviousName_false" class="block-label">
+  <input type="radio" id="previousName_hasPreviousName_false" name="previousName.hasPreviousName" value="false" class="radio validate" data-validation-name="previousNo" data-validation-type="field"  data-validation-rules="nonEmpty" tab-index="7">No<span class="visuallyhidden">I'm not happy yo cone co</span>
+</label>
+</div>
+</fieldset>
+
+
+
+  <input type="submit" class="button next validation-submit" value="Submit">
+</main>
+{{/content}}
+
+{{/layout}}

@@ -33,10 +33,10 @@ $(document).ready(function(){
 <a class="back-to-previous" href="#">Back<span class="visuallyhidden"> to the previous question</span></a>
  <div class="header-context" id="global-breadcrumb">
         <ol class="group "role="breadcrumbs">
-  <li><a href="/start">Home</a></li>
-  <li>Am I eligible?</li>
+  <li><a href="/start2">Home</a></li>
+  <li>Check if eligible</li>
   </ul>
-  <h2 class="heading-large">Do you both earn less than £42,285 each?</h2>
+  <h2 class="heading-large">Does your spouse or partner earn more than £42,285 per year?</h2>
   <fieldset class="inline">
     <div class="form-group">
     <label class="block-label" for="radio-inline-1">
@@ -49,13 +49,13 @@ $(document).ready(function(){
   </fieldset>
   <fieldset class="inline">
     <div id="earn-less" style="display:none">
-    <a href="calc2" button class="button">Next</a>
+          <div class="panel-indent">
+       <p>You can't transfer part of your tax free allowance because one of you is a <a href="https://www.gov.uk/income-tax-rates/current-rates-and-allowances">higher rate tax payer</a>.</p>
     </div>
   </fieldset>
   <fieldset class="inline">
   <div id="earn-more" style="display:none">
-    <div class="panel-indent">
-      <p>You can't transfer part of your tax free allowance because one of you is a <a href="https://www.gov.uk/income-tax-rates/current-rates-and-allowances">higher rate tax payer</a>.</p>
+      <a href="calc2" button class="button">Next</a>
     </div>
   </div>
   </fieldset>

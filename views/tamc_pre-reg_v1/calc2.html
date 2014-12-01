@@ -1,9 +1,7 @@
 {{<layout}}
-    {{$propositionHeader}}
-      {{>propositional_navigation_alpha}}
-    {{/propositionHeader}}
-{{$headerClass}}with-proposition{{/headerClass}}
-{{$pageTitle}}Index{{/pageTitle}}
+    
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
 
 {{$content}}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -33,13 +31,13 @@ $(document).ready(function(){
 <main id="content" role="main">
 <div class="inner-block">
   <a class="back-to-previous" href="calc1">Back<span class="visuallyhidden"> to the previous question</span></a>
-<div id="global-breadcrumb" class="header-context">
+ <div class="header-context" id="global-breadcrumb">
         <ol class="group "role="breadcrumbs">
-  <li><a href="/">Home</a></li>
-  <li>Am I eligible?</li>
-  </ol>
+  <li><a href="/start2">Home</a></li>
+  <li>Check if eligible</li>
+  </ul>
+    <h2 class="heading-large">Does your spouse or partner earn less than £10,499?</h2>
 <fieldset class="inline">
-  <h2 class="heading-large">Does only one of you earn less than £9,450?</h2>
   <label class="block-label" for="radio-inline-1">
     <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
   </label>
@@ -50,7 +48,7 @@ $(document).ready(function(){
   <fieldset class="inline">
   <div id="earn-less" style="display:none">
     <div class="form-group">
-    <a href="pre-reg_form" button class="button" style="margin-top:25px">Next</a>
+    <a href="pre-reg_form2" button class="button" style="margin-top:25px">Next</a>
   </div>
 </div>
 </fieldset>
@@ -69,9 +67,9 @@ $(document).ready(function(){
     <div class="form-group">
     <div class="panel-indent"><p>If one of you earns between £9,450 and £10,499 you may benefit from sharing your tax free allowance. The amount you will receive depends on your earnings.</p>
     </div>  
-    <a href="pre-reg_form" button class="button">Next</a>
+    <a href="pre-reg_form2" button class="button">Next</a>
   </div>
-      <div class="panel-indent" id="noBetween" style="display:none"><a href="pre-reg_form" button class="button">Next</a>
+      <div class="panel-indent" id="noBetween" style="display:none"><a href="pre-reg_form2" button class="button">Next</a>
   </div>
 </div>
 

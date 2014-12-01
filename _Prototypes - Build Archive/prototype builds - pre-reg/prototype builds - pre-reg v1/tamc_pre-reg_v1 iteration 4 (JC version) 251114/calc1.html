@@ -1,0 +1,66 @@
+{{<layout}}
+    
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+.steps{
+  float:right;
+  padding-right:860px;
+   font-size: 16px;
+       color: #6f777b;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#radio-inline-1").click(function(){
+    $("#earn-less").show();
+    $("#earn-more").hide();
+  });
+  $("#radio-inline-2").click(function(){
+    $("#earn-less").hide();
+    $("#earn-more").show();
+  });
+});
+</script>
+
+ 
+
+<main id="content" role="main">
+  <div class="inner-block">
+<a class="back-to-previous" href="#">Back<span class="visuallyhidden"> to the previous question</span></a>
+ <div class="header-context" id="global-breadcrumb">
+        <ol class="group "role="breadcrumbs">
+  <li><a href="/start">Home</a></li>
+  <li>Am I eligible?</li>
+  </ul>
+  <h2 class="heading-large">Do you both earn less than £42,285 each?</h2>
+  <fieldset class="inline">
+    <div class="form-group">
+    <label class="block-label" for="radio-inline-1">
+    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
+    </label>
+    <label class="block-label" for="radio-inline-2">
+    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
+    </label>
+    </div>
+  </fieldset>
+  <fieldset class="inline">
+    <div id="earn-less" style="display:none">
+    <a href="calc2" button class="button">Next</a>
+    </div>
+  </fieldset>
+  <fieldset class="inline">
+  <div id="earn-more" style="display:none">
+    <div class="panel-indent">
+      <p>You can't transfer part of your tax free allowance because one of you is a <a href="https://www.gov.uk/income-tax-rates/current-rates-and-allowances">higher rate tax payer</a>.</p>
+    </div>
+  </div>
+  </fieldset>
+ </div>
+  </main>
+{{/content}}
+
+{{/layout}}

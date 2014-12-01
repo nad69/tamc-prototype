@@ -84,13 +84,13 @@ label.error{
 <div class="inner-block">
 <div class="header-context" id="global-breadcrumb">
         <ol class="group "role="breadcrumbs">
-  <li><a href="/start">Home</a></li>
-    <li><a href="/calc1">Am I eligible?</a></li>
-  <li>Your details</li>
+  <li><a href="/start2">Home</a></li>
+  <li><a href="/calc1">Check if eligible</a></li>
+  <li>Register your interest</li>
   </ol>
 </div>
-  <h1 class="heading-xlarge">Provide your details</h1>
-  <p>By registering now you can receive an alert when this service becomes available.<br>You're not applying to transfer any tax free amounts at this stage.</p>
+  <h1 class="heading-xlarge">Register your interest</h1>
+  <p>By giving us your contact details now, you'll be notified when registration for this new tax benefit opens.<br>You'll then be invited to apply online.</p>
   <form class="form b" method="get" action="confirm2">
 <fieldset class="validate">
  <div class="form-group">
@@ -114,31 +114,14 @@ label.error{
 
 <fieldset class="inline">
   <div class="form-group">
-    <h2 class="heading-large">Are you filling out this form on behalf of another couple?<br/> For example, your parents or friends.</h2>
-    <label class="block-label" for="yes-on-behalf-of-someone">
-    <input id="yes-on-behalf-of-someone" type="radio" name="Are you filling out this form on behalf of another couple" value="Yes">
-    Yes
-    </label>
-    <label class="block-label" for="no-dont-contact-me">
-    <input id="no" type="radio" name="Are you filling out this form on behalf of another couple" value="No">
-    No
-    </label>
-    </div>  
-  </fieldset>
-
 <fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
  <div class="form-group"> 
-  <h2 class="heading-large">Would you like to help us improve this service?</h2>
-<label for="yes-contact-me" class="block-label" >
-<input  type="radio" id="yes-contact-me"  name="previousName.hasPreviousName" value="true" class="radio validate" data-validation-name="yes-contact-me" data-validation-type="field" data-validation-rules="nonEmpty" tab-index="6">Yes<span class="visuallyhidden"> I’m happy for you to contact me </span></label>
-<label for="previousName_hasPreviousName_false" class="block-label">
-  <input type="radio" id="previousName_hasPreviousName_false" name="previousName.hasPreviousName" value="false" class="radio validate" data-validation-name="previousNo" data-validation-type="field"  data-validation-rules="nonEmpty" tab-index="7">No<span class="visuallyhidden">I'm not happy yo cone co</span>
-</label>
+  <label class="form-checkbox" for="checkbox-telephone-number">
+    <input id="checkbox-contactable-for-research" type="checkbox" value="checkbox-contactable-for-research">
+    Please tick this box if you're happy for us to contact you for research purposes
+  </label>
 </div>
 </fieldset>
-
-
-
   <input type="submit" class="button next validation-submit" value="Submit">
 </main>
 {{/content}}
