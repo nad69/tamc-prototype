@@ -96,8 +96,23 @@ module.exports = {
 
       });
 
-            app.get('/start-app2', function (req, res) {
-          res.render('tamc-app_v1/start-app2', 
+            app.get('/eligibility1_1', function (req, res) {
+          res.render('tamc_pre-reg_v1/eligibility1_1', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/eligibility1_2', function (req, res) {
+          res.render('tamc_pre-reg_v1/eligibility1_2', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_1', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_1', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_1', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_1', 
             {'assetPath' : assetPath });
       });
 

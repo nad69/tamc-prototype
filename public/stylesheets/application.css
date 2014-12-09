@@ -1218,16 +1218,20 @@ main header, main header p {
   text-transform: none; }
 
 .highlight-answer, .highlighted-event {
+  font-size: 1.2em;
   background-color: #28a197;
   color: #fff;
   text-align: center;
-  padding: 1.1em 2em 0.2em 2em;
+  padding: 1.1em 2em 0.2em 0.2em;
   margin: 0em 0em 3em 0em; }
 
 .noticed {
   font-size: 5em;
   font-weight: 700;
   display: block; }
+
+sup.reduce {
+  font-size: 0.6em; }
 
 .extra-padding {
   padding-top: 1.5em; }
