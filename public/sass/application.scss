@@ -13,6 +13,10 @@
 
 // Your styles here
 
+#global-breadcrumb{
+    border-bottom: none;
+}
+
 #global-breadcrumb ol li {
     background-image: url("https://assets.digital.cabinet-office.gov.uk/static/separator-73822610794bc3a64871f144d93d6526.png");
     background-position: 100% 50%;
