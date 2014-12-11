@@ -1267,3 +1267,12 @@ details summary {
 
 details .summary {
   text-decoration: underline; }
+
+.validation-message {
+  border-left: 4px solid #df3034;
+  clear: both;
+  color: #df3034;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 1em 0 1em -14px;
+  padding: 10px; }
