@@ -133,3 +133,18 @@ label.selectable {
     padding: 12px 14px 12px 46px;
     position: relative;
 }
+details summary {
+    color: #005ea5;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0.26316em;
+    padding-bottom:20px;
+    position: relative;
+}
+
+details .summary {
+    text-decoration: underline;
+
+}
+
+
