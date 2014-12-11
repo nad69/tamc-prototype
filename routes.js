@@ -117,11 +117,12 @@ module.exports = {
       });
 
 
-      /* full app - v1 iteration 1 - NM/JK 081214 */
+      /* full app v1 iteration 1 - NM/JK post 08/11/14 */
 
             app.get('/app-start1', function (req, res) {
           res.render('tamc-app/app-start1', 
             {'assetPath' : assetPath });
+
 
       });
 

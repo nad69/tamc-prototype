@@ -1,0 +1,41 @@
+{{<govuk_template}}
+    {{$head}}
+      {{>head}}
+      <!-- Additional head code, CSS, JS specific only to this file here. If needed on other screens consider moving to separate file -->
+    {{/head}}
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
+   
+    {{$footerTop}}
+                {{>footer_links}}
+    {{/footerTop}}
+   
+    {{$pageTitle}}
+        Start
+    {{/pageTitle}}
+   
+    {{$content}}
+<main id="content" role="main"><div id="content">
+  {{>hmrc_banner}}
+  <div class="grid-wrapper">
+    <div class="grid grid 4-3-4">
+      <div class="inner-block">
+        <div class="header-context" id="global-breadcrumb">
+        <ol class="group "role="breadcrumbs">
+          <li><a>Home</a></li>
+        </ol>
+      </div>
+        <h1 class="heading-xlarge">Apply for a new tax reduction<br>for married couples and civil partnerships</h1>
+        <div class="article-container group">
+          <article role="article" class="group">
+            <div class="highlight-answer">
+              Couples could benefit from an annual tax reduction of up to<span class="noticed">£212</span>
+              </div>
+               <p class="lede">Most people can earn up to £10,600 a year before paying tax on their <a href="https://www.gov.uk/income-tax/overview">income</a>. This is called a <a href="https://www.gov.uk/income-tax-rates">Personal Allowance</a>.<br><br>From 6th April 2015, if your income is less than £10,600, you can share up to £1060 of your unused Personal Allowance with your partner to reduce the amount of tax they pay.<br></p>
+            <p>Find out if you're eligible and apply. This will only take around 20 minutes.</p> 
+          </article>
+        </div>
+    <a href="eligibility1_1" button class="button button-get-started">Start now</a>
+</main>
+{{/content}}
+{{/govuk_template}}
