@@ -116,7 +116,6 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
-    }
 
       /* full app - v1 iteration 1 - NM/JK 081214 */
 
@@ -133,6 +132,3 @@ module.exports = {
 
     }    
 }
-
-  
-
