@@ -114,7 +114,33 @@ module.exports = {
             app.get('/confirm1_1', function (req, res) {
           res.render('tamc_pre-reg_v1/confirm1_1', 
             {'assetPath' : assetPath });
+
       });
+
+      /* pre-reg v1 iteration 5.3 - NM/SW post 08/11/14 */
+
+                        app.get('/start1_2', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_2', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/eligibility1_2', function (req, res) {
+          res.render('tamc_pre-reg_v1/eligibility1_2', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_2', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_2', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_2', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_2', 
+            {'assetPath' : assetPath });
+      });
+
+            
+
 
 
       /* full app v1 iteration 1 - NM/JK post 08/11/14 */
