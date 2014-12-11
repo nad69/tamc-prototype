@@ -5,13 +5,8 @@
 
 {{$content}}
 <main id="content" role="main">
-
-<link href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css" media="all" rel="stylesheet" type="text/css" />
-
-
-
-
-  <div class="header-context" id="global-breadcrumb">
+<div class="inner-block">
+<div class="header-context" id="global-breadcrumb">
     <ol class="group "role="breadcrumbs">
       <li><a href="/start1_1">Home</a></li>
       <li><a href="/eligibility1_1">Am I eligible?</a></li>
@@ -20,14 +15,11 @@
   </div>
   <h1 class="heading-xlarge">Be alerted when registration opens</h1>
   <p>By giving us your contact details now, you'll be notified when registration for this new tax reduction opens.<br>You'll then be invited to apply online.</p>
-  
-
-
-    <details>
-       <summary><span class="summary" role="button">Help with applying online</span></summary>
-       <div class="panel-indent">
-        If you can't get online to apply when this service opens, a limited telephone service will be available.
-      </div>
+  <details>
+    <summary><span class="summary" role="button">Help with applying online</span></summary>
+    <div class="panel-indent">
+    If you can't get online to apply when this service opens, a limited telephone service will be available.
+    </div>
   </details>
 
   <form class="form b" method="get" action="confirm1_1">
@@ -43,6 +35,10 @@
    <div class="form-group">
     <label class="form-label" for="email-2">Email</label>
     <input class="form-control" id="email-2" type="text">
+  </div>
+     <div class="form-group">
+    <label class="form-label" for="email-confirm">Confirm email</label>
+    <input class="form-control" id="email-confirm" type="text">
   </div>
   <!--<p>and/or</p>
   <div class="form-group">
@@ -69,10 +65,5 @@
 </fieldset>
   <input type="submit" class="button next validation-submit" value="Submit">
 </main>
-
-
-
-
-
 {{/content}}
 {{/layout}}
