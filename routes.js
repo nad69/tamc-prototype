@@ -149,13 +149,23 @@ module.exports = {
           res.render('tamc-app/app-start1', 
             {'assetPath' : assetPath });
 
-
       });
 
             app.get('/app-eligibility1', function (req, res) {
           res.render('tamc-app/app-eligibility1', 
             {'assetPath' : assetPath });
       });
+
+            app.get('/app-form1', function (req, res) {
+          res.render('tamc-app/app-form1', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/app-confirm1', function (req, res) {
+          res.render('tamc-app/app-confirm1', 
+            {'assetPath' : assetPath });
+      });
+
 
     }    
 }
