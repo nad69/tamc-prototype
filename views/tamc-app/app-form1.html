@@ -9,24 +9,6 @@
 
 <main id="content" role="main">
 
-
-<script type="text/javascript" language="JavaScript">
-<!--
-//--------------------------------
-// Quick Dirty Compare 2 fields for proto
-//--------------------------------
-function checkEmail(theForm) {
-    if (theForm.EMAIL1.value != theForm.EMAIL2.value)
-    {
-        //alert('NO MATCHY');
-        document.getElementById("emailMismatch").innerHTML = "<div class='validation-message'>Your email address does not match, please check and submit again</div>";
-        return false;
-    } else {
-        return true;
-    }
-}
-//-->
-</script> 
 <div class="inner-block">
   <div class="header-context" id="global-breadcrumb">
     <ol class="group "role="breadcrumbs">
@@ -37,67 +19,63 @@ function checkEmail(theForm) {
   </div>
   <h1 class="heading-large">Transfer part of your tax allowance to your partner</h1>
   <p>Please give us your partner's details</p>
-<!--  <details>
-    <summary><span class="summary" role="button">Help with applying online</span></summary>
-    <div class="panel-indent">If you can't get online to apply when this service opens, a limited telephone service will be available.</div>
-  </details>-->
-<form class="form b" method="get" action="app-confirm1" onsubmit="return checkEmail(this);">
+
+<form class="form b" method="get" action="app-confirm1">
 <fieldset class="validate">
- <div class="form-group">
-    <label class="form-label" for="first-name-2">First name</label>
-    <input class="form-control" id="first-name-2" type="text">
-  </div>
-    <div class="form-group">
-    <label class="form-label" for="middle-names-2">Middle names</label>
-    <input class="form-control" id="middle-names-2" type="text">
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="last-name-2">Last name</label>
-    <input class="form-control" id="last-name-2" type="text">
-  </div>
-   <div class="form-group">
-    <label class="form-label" for="nino">National Insurance number</label>
-    <input class="form-control" name="nino" id="nino" type="text">
-  </div>
+<div class="form-group">
+<label class="form-label-bold" for="first-name">First name</label>
+<input id="first-name" class="form-control" type="text">
+</div>
+<div class="form-group">
+<label class="form-label-bold" for="middle-name">Middle names</label>
+<input id="middle-name" class="form-control" type="text">
+</div>
+<div class="form-group">
+<label class="form-label-bold" for="last-name">Last name</label>
+<input id="last-name" class="form-control" type="text">
+</div>
+<div class="form-group">
+  <label class="form-label-bold" for="ni-number">National Insurance number
+  <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.
+  <br>For example, 'VO 12 34 56 D'.</span></label>
+  <input id="ni-number" class="form-control" type="text">
+</div
+
+
      <div class="form-group">
-<fieldset class="validate inline-fields" data-validation-name="dateOfBirthDate" data-validation-type="fieldset" data-validation-rules="allNonEmpty" data-validation-children="day month year">
 
-      <span class="day field-wrapper">
-        <label for="dob_dob_day" class="">
-            Day
-        </label>
-        <input type="number" id="dob_dob_day" name="dob.dob.day" value="" autocomplete="off" class="text  day validate " data-validation-name="day" data-validation-type="field" data-validation-rules="nonEmpty">
-      </span>
 
-      <span class="month field-wrapper">
-        <label for="dob_dob_month" class="">
-            Month
-        </label>
-        <input type="number" id="dob_dob_month" name="dob.dob.month" value="" autocomplete="off" class="text  month validate " data-validation-name="month" data-validation-type="field" data-validation-rules="nonEmpty">
-      </span>
-
-      <span class="year field-wrapper">
-        <label for="dob_dob_year" class="">
-            Year
-        </label>
-        <input type="number" id="dob_dob_year" name="dob.dob.year" value="" autocomplete="off" class="text  year text validate " data-validation-name="year" data-validation-type="field" data-validation-rules="nonEmpty">
-      </span>
-
-        <p class="example">For example: <span class="date">31 3 1970</span></p>
-    </fieldset>
+<fieldset>
+  <legend class="form-label-bold">Date of birth</legend>
+  <div class="form-date">
+    <p class="form-hint">For example, 31 3 1980</p>
+    <div class="form-group form-group-day">
+      <label for="dob-day">Day</label>
+      <input id="dob-day" class="form-control" type="number" max="31" min="0" pattern="[0-9]*">
+    </div>
+    <div class="form-group form-group-month">
+      <label for="dob-month">Month</label>
+      <input id="dob-month" class="form-control" type="number" max="12" min="0" pattern="[0-9]*">
+    </div>
+    <div class="form-group form-group-year">
+      <label for="dob-year">Year</label>
+      <input id="dob-year" class="form-control" type="number" max="2014" min="0" pattern="[0-9]*">
+    </div>
   </div>
 </fieldset>
+</div>
 
-<fieldset class="inline">
+<div class="inner-block">
   <div class="form-group">
-<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
     <div class="panel-indent your-details">
     <p>
       Please check the details above are correct before clicking on the 'Apply' button below.
     </p>
   </div>
-</fieldset>
-  <input type="submit" class="button next validation-submit" value="Continue" onsubmit="return checkEmail(this);">
+</div>
+<input type="submit" class="button next validation-submit" value="Continue" onsubmit="return checkEmail(this);">
+</div>
+  
 </main>
 {{/content}}
 {{/layout}}

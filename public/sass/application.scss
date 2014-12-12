@@ -159,4 +159,41 @@ details .summary {
 {color: #6F777B;
 font-weight:800;
 }
+.form-date .form-group {
+    clear: none;
+    float: left;
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 50px;
+}
+.form-date .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
 
+.form-date .form-group input {
+    width: 100%;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #bfc1c3;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.31579;
+    padding: 4px;
+    text-transform: none;
+    width: 100%;
+}
+.form-control {
+    width: 50%;
+}
+.paddingboost{
+    padding-top:20px;
+}
