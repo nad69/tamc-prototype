@@ -41,11 +41,11 @@ function checkEmail(theForm) {
     <summary><span class="summary" role="button">Help with applying online</span></summary>
     <div class="panel-indent">If you can't get online to apply when this service opens, a limited telephone service will be available.</div>
   </details>
-<form class="form b" method="get" action="confirm1_1" onsubmit="return checkEmail(this);">
+<form class="form b" method="link" action="confirm1_1" onsubmit="return checkEmail(this);">
 <fieldset class="validate">
  <div class="form-group">
-    <label class="form-label" for="first-name-2">First name</label>
-    <input class="form-control" id="first-name-2" type="text">
+    <label class="form-label" for="first-name">First name</label>
+    <input class="form-control" id="first-name" type="text">
   </div>
   <div class="form-group">
     <label class="form-label" for="last-name-2">Last name</label>
@@ -85,5 +85,6 @@ function checkEmail(theForm) {
 </fieldset>
   <input type="submit" class="button next validation-submit" value="Submit" onsubmit="return checkEmail(this);">
 </main>
+</form>
 {{/content}}
 {{/layout}}
