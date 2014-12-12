@@ -156,6 +156,11 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+            app.get('/app-ida1', function (req, res) {
+          res.render('tamc-app/app-ida1', 
+            {'assetPath' : assetPath });
+      });
+
             app.get('/app-form1', function (req, res) {
           res.render('tamc-app/app-form1', 
             {'assetPath' : assetPath });

@@ -1,0 +1,7 @@
+var cdlg = {
+"CancelDialogTitle": "Confirm Cancellation",
+"CancelDialogContent": "If you continue you will be returned to your service provider. Are you sure you wish to cancel?",
+"CancelDialogButtonOK": "Yes",
+"CancelDialogButtonCancel": "No"
+
+};
