@@ -1,0 +1,90 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+
+<main id="content" role="main">
+
+
+<script type="text/javascript" language="JavaScript">
+<!--
+//--------------------------------
+// Quick Dirty Compare 2 fields for proto
+//--------------------------------
+function checkEmail(theForm) {
+    if (theForm.EMAIL1.value != theForm.EMAIL2.value)
+    {
+        //alert('NO MATCHY');
+        document.getElementById("emailMismatch").innerHTML = "<div class='validation-message'>Your email address does not match, please check and submit again</div>";
+        return false;
+    } else {
+        return true;
+    }
+}
+//-->
+</script> 
+<div class="inner-block">
+  <div class="header-context" id="global-breadcrumb">
+    <ol class="group "role="breadcrumbs">
+      <li><a href="/start1_2">Home</a></li>
+      <li><a href="/eligibility1_2">Am I eligible?</a></li>
+      <li>Register for an alert</li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">Be alerted when you can apply</h1>
+  <p>By giving us your contact details now, you'll be notified when this service opens.<br>You'll then be invited to apply online with support if needed.</p>
+<!--  <details>
+    <summary><span class="summary" role="button">Help with applying online</span></summary>
+    <div class="panel-indent">If you can't get online to apply when this service opens, a limited telephone service will be available.</div>
+  </details>-->
+<form class="form b" method="link" action="confirm1_2" onsubmit="return checkEmail(this);">
+<fieldset class="validate">
+ <div class="form-group">
+    <label class="form-label" for="first-name">First name</label>
+    <input class="form-control" id="first-name" type="text">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="last-name-2">Last name</label>
+    <input class="form-control" id="last-name-2" type="text">
+  </div>
+   <div class="form-group">
+    <label class="form-label" for="email1">Email</label>
+    <input class="form-control" name="EMAIL1" id="email1" type="text">
+  </div>
+     <div class="form-group">
+    <label class="form-label" for="email2">Confirm email</label>
+    <input class="form-control" name="EMAIL2" id="email2" type="text">
+  </div>
+<div id="emailMismatch"> </div>
+  <!--<p>and/or</p>
+  <div class="form-group">
+    <label class="form-label" for="mobile-2">Mobile text alert</label>
+    <input class="form-control" id="mobile-2" type="text">
+  </div>-->
+
+</fieldset>
+
+<fieldset class="inline">
+  <div class="form-group">
+<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
+ <div class="form-group"> 
+  <label class="form-checkbox" for="checkbox-telephone-number">
+    <input id="checkbox-contactable-for-research" type="checkbox" value="checkbox-contactable-for-research">
+    Tick this box if we may contact you about improving this service.
+  </label>
+  </div>
+    <div class="panel-indent your-details">
+    <p>
+      Your details won't be shared with anyone and are completely secure.
+    </p>
+  </div>
+</fieldset>
+  <input type="submit" class="button next validation-submit" value="Submit" onsubmit="return checkEmail(this);">
+</main>
+</form>
+{{/content}}
+{{/layout}}
