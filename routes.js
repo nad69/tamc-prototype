@@ -147,17 +147,17 @@ module.exports = {
       });
 
             app.get('/eligibility1_3', function (req, res) {
-          res.render('tamc_pre-reg_v1/eligibility1_2', 
+          res.render('tamc_pre-reg_v1/eligibility1_3', 
             {'assetPath' : assetPath });
       });
 
             app.get('/pre-reg_form1_3', function (req, res) {
-          res.render('tamc_pre-reg_v1/pre-reg_form1_2', 
+          res.render('tamc_pre-reg_v1/pre-reg_form1_3', 
             {'assetPath' : assetPath });
       });
 
             app.get('/confirm1_3', function (req, res) {
-          res.render('tamc_pre-reg_v1/confirm1_2', 
+          res.render('tamc_pre-reg_v1/confirm1_3', 
             {'assetPath' : assetPath });
       });
 
