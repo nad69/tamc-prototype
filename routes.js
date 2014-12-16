@@ -7,7 +7,6 @@ module.exports = {
 
       });
 
-
       /* Elements pages */
 
       app.get('/start', function (req, res) {
@@ -190,6 +189,12 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+/**IDA Paths AJC 16/12/14**/
+      app.get('/app-ida1', function (req, res) {
+          res.render('tamc_app/app-ida1', 
+            {'assetPath' : assetPath });
+      });
+/***********/
 
     }    
 }
