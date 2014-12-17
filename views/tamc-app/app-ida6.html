@@ -1,0 +1,37 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+
+<main id="content" role="main">
+
+<div class="inner-block">
+  <h1 class="heading-xlarge">Verify your identity</h1>
+
+<form id="validate-age-residency" method="link" action="app-ida7">
+<div class="form-group ">
+<fieldset>
+<legend class="form-label-bold">Select all the documents you have</legend>
+<p>You’ll need to refer to any documents you select</p>
+<label class="block-label" for="passport">
+<input id="passport" type="checkbox" value="passport" name="documents">
+Valid UK passport
+</label>
+<label class="block-label" for="driving-licence">
+<input id="driving-licence" type="checkbox" value="driving_license" name="documents">
+Valid UK photocard driving licence
+</label>
+</fieldset>
+</div>
+<div class="form-group">
+<input id="next-button" class="button" type="submit" value="Next">
+</div>
+
+</form>
+</main>
+{{/content}}
+{{/layout}}

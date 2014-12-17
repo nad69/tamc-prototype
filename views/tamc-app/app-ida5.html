@@ -1,0 +1,36 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+
+<main id="content" role="main">
+
+<div class="inner-block">
+  <h1 class="heading-xlarge">Verify your identity</h1>
+
+<form id="validate-age-residency" method="link" action="app-ida6">
+<div class="form-group">
+<fieldset class="inline">
+<legend class="form-label-bold">Can you refer to your bank and credit card statements now?</legend>
+<label class="block-label" for="yes">
+<input id="yes" type="radio" value="true" name="selection">
+Yes
+</label>
+<label class="block-label" for="no">
+<input id="no" type="radio" value="false" name="selection">
+No
+</label>
+</fieldset>
+</div>
+<div class="form-group">
+<input id="next-button" class="button" type="submit" value="Next">
+</div>
+
+</form>
+</main>
+{{/content}}
+{{/layout}}

@@ -1,0 +1,66 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+
+<main id="content" role="main">
+
+<div class="inner-block">
+  <div class="grid-section">
+    <div class="grid-2-3">
+      <h1 class="heading-xlarge">Verify your identity</h1>
+      <h2 class="heading-medium">Choose a company to verify you</h2>
+      <p>You can choose any company - you don&rsquo;t need to be an existing customer.</p>
+      <p>You&rsquo;ll need your mobile phone.</p>
+    </div><!--Close Grd 2-3-->
+  </div><!--Close GridSection-->
+<div class="grid-section" id="matching-idps">
+        <div class="grid-1-3">
+          <div class="company">
+            <div class="company-inner">
+              <div class="company-logo">
+                <div class="company-logo-inner">
+                  <img alt="Experian" src="public/experian.png">
+                </div>
+              </div>
+              <form class="idp-option" action="/choose-a-certified-company?sessionId=4774e6fe-f927-4446-adc3-1466b0354773&amp;selected-idp=https%3A%2F%2Fwww.experianidentityservice.co.uk%2FSaml%2F&amp;selected-evidence=passport&amp;selected-evidence=mobile_phone" method="post">
+                <button title="Experian" name="experian" value="Experian" class="button" type="submit">Choose Experian</button><input name="selected-idp" value="https://www.experianidentityservice.co.uk/Saml/" type="hidden">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="heading-medium">Other companies</h3>
+      <div class="grid-section" id="non-matching-idps">
+        <div class="grid-1-3">
+          <div class="company">
+            <div class="company-inner">
+              <div class="company-logo">
+                <div class="company-logo-inner">
+                  <img alt="Digidentity" src="public/digidentity.png">
+                </div>
+              </div>
+              <div class="company-extra">
+                <h3>You&rsquo;ll also need:</h3>
+                <p id="you-will-also-need-digidentity">driving licence, passport</p>
+              </div>
+              <form class="idp-option" action="/choose-a-certified-company?sessionId=4774e6fe-f927-4446-adc3-1466b0354773&amp;selected-idp=https%3A%2F%2Fauth.digidentity.eu%2Fsso%2Fcabinet&amp;selected-evidence=passport&amp;selected-evidence=mobile_phone" method="post">
+                <button title="Digidentity" name="digidentity" value="Digidentity" class="button" type="submit">Choose Digidentity</button>
+                <input name="selected-idp" value="https://auth.digidentity.eu/sso/cabinet" type="hidden">
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div><!--Close Inner Block-->
+</main>
+{{/content}}
+{{/layout}}

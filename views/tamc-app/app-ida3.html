@@ -1,133 +1,24 @@
-<!DOCTYPE html>
-<html class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Log in</title>
-    <link href="app-ida3_files/css.css" rel="stylesheet">
 
-    <script src="app-ida3_files/modernizr-2.js" type="text/javascript"></script>
-    <script src="app-ida3_files/knockout-2.js" type="text/javascript"></script>    
-    <script src="app-ida3_files/jquery"></script>
-
-    <script src="app-ida3_files/jqueryval"></script>
-
-    <script src="app-ida3_files/jqueryui"></script>
-
-    <script src="app-ida3_files/idaas"></script>
-    
-    <script src="app-ida3_files/en-GB" type="text/javascript"></script>
-    
-<script src="app-ida3_files/javascript.js" charset="UTF-8" type="text/javascript"></script></head>
-<body>
-    <div id="bodycontent">
-        <header>
-<a href="https://www.experianidentityservice.co.uk/Cancel" class="cancel"><div id="splogo">Back to GOV.UK</div></a><div id="logo"></div>        </header>
-        <section id="statusBar">
-<section id="loginStatus">
-</section>
-<section id="language">
-        <ul class="lang">
-
-            <li class="first"><a href="https://www.experianidentityservice.co.uk/Account/Login/Username?lang=cy-GB">Cymraeg</a></li>
-
-        </ul>
-
-</section>        </section>
-        <div id="main">
-            <section id="content">
-                
-                
-
-
-<div id="loginPart">
-
-    <div id="loginHeader">
-    </div>
-
-
-    
-
-    <div id="divBoxes" class="boxes">
-        <div id="divLoginBox" class="loginBox">
-<form novalidate="novalidate" action="/Account/Login/Username" autocomplete="off" method="post"><fieldset class="fsn qs">
-<legend><span>Login</span></legend><h1>Login</h1><div class="intro">If 
-you already have an Experian identity account please enter your username
- and password below. Fields marked with * must be completed.</div>
-<div class="vals">
-<span class="field-validation-valid" data-valmsg-for="Login" data-valmsg-replace="true"></span>
+{{<layout}}
+{{$pageTitle}}Index{{/pageTitle}}
+{{$content}}
+<main id="content" role="main">
+<div class="inner-block">
+<p></p>
+ <div class="content blue-box">
+<div class="content-inner"><h1>A certified company will verify your identity - there’s no charge</h1>
+<ul id="certified-companies" class="list-companies">
+<li>
+<img class="logo" src="public/experian.gif" alt="Experian">
+</li>
+<li>
+<img class="logo" src="public/digidentity.gif" alt="Digidentity">
+</li>
+</ul>
+<p>They’ve all met security standards set by the government.</p>
+  <div class="actions"><a class="button-action" id="next" href="app-ida4">Start</a></div>
 </div>
-
-
-
-<div class="fieldset">
-    <div class="intro"></div>
-
-    <p><span class="field-validation-valid" data-valmsg-for="CspUsernameAuthuserNameuserName" data-valmsg-replace="true"></span></p>
-
-<div class="field text-field">
-    <label for="CspUsernameAuthuserNameusername">*Username</label>
-
-    <input autofocus="autofocus" data-val="true" data-val-regex="Please enter a valid username." data-val-regex-pattern="^[a-zA-Z0-9\._\-]+$" data-val-required="Please enter your username." id="CspUsernameAuthuserNameusername" name="CspUsernameAuthuserNameusername" type="text">
-    <br>
-    <span class="field-validation-valid" data-valmsg-for="CspUsernameAuthuserNameusername" data-valmsg-replace="true"></span>
-
-    <div class="cb"><a href="https://www.experianidentityservice.co.uk/ForgotUsername" tabindex="100">Forgotten your username?</a></div>
 </div>
-<div class="clear"></div>
-<div class="field password-field">
-    <label for="CspUsernameAuthuserNamepwd">*Password</label>
-    <input data-val="true" data-val-regex="This field contains invalid characters." data-val-regex-pattern=".*" data-val-required="Please enter your password." id="CspUsernameAuthuserNamepwd" name="CspUsernameAuthuserNamepwd" type="password">
-    <br>
-    <span class="field-validation-valid" data-valmsg-for="CspUsernameAuthuserNamepwd" data-valmsg-replace="true"></span>
-
-    <div class="cb"><a href="https://www.experianidentityservice.co.uk/ForgotPassword" tabindex="101">Forgotten your password?</a></div>
-</div>
-
-<div class="clear"></div>
-</div><input name="_qg" value="CspUsernameAuth" type="hidden">                    <div class="btn_container">
-                        <input class="btn-submit finish" name="Finish" value="Log in" type="submit">
-                        <a href="https://www.experianidentityservice.co.uk/Cancel" id="cancelLink" class="btn-submit cancel">Cancel</a>
-                    </div>
-<input name="__RequestVerificationToken" value="R2CKvWDTXvDLdPkEJ6GuZcNRUOk70yTXdYJqjImaF99BzGuF0luvZuk8G4eUsZP5D_3VNkVkIH4DoedDjiLFG8GJxqw1" type="hidden"></fieldset></form>        </div>
-        <div id="divRegisterBox" class="registerBox">
-       
-<form novalidate="novalidate" action="/Account/GoRegister" autocomplete="off" method="post"><fieldset class="fsn qs">
-<legend><span>Register</span></legend><h1>Register</h1><div class="intro">If you would like an Experian identity account, please click the button below to get started</div>
-<div class="vals">
-<span class="field-validation-valid" data-valmsg-for="Register" data-valmsg-replace="true"></span>
-</div>
-                <p>
-                    <input id="registerBtn" class="btn-submit btn-green" name="Finish" value="Create your account" type="submit">
-                </p>
-</fieldset></form>            
-    <div id="regHowLong" class="fs">
-      <h1>How Long Will It Take?</h1>
-      <a href="#" title="You have got 60 minutes to complete the registration process. If you are timed out you will need to login again. This will return you to the point in the registration at which you exited." class="tooltip" tabindex="-1">?</a>
-    </div>
-  
-        </div>
-    </div>
-</div>
-
-            </section>
-        </div>
-        <footer>
-
-<div id="footer">
-		<ul id="footerTerms">
-		<li><a href="https://www.experianidentityservice.co.uk/Help/Terms" target="_blank">Terms &amp; Conditions</a></li>
-		<li><a href="https://www.experianidentityservice.co.uk/Help/Privacy" target="_blank">Privacy Policy</a></li>
-    <li><a href="https://www.experianidentityservice.co.uk/Help/FAQ" target="_blank">FAQs</a></li>
-		<!--<li><a href="http://www.experian.co.uk/www/pages/home/sitemap.html" target="_blank">Site Map</a></li>-->
-		<li class="noBG"><a href="https://www.experianidentityservice.co.uk/Help/ContactUs" target="_blank">Contact Us</a></li>
-		</ul>
-		<p id="footerDisclaimer">
-		Experian registered in England and Wales under the company registration number 653331.<br>
-		Registered office address: Landmark House, Experian Way, NG2 Business Park, Nottingham NG80 1ZZ.
-		</p>
-	</div>
-        </footer>
-    </div>
-
-
-</body><script type="application/x-javascript" src="app-ida3_files/opt_content.js"></script></html>
+</main>
+{{/content}}
+{{/layout}}

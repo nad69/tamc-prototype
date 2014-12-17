@@ -188,12 +188,36 @@ module.exports = {
           res.render('tamc-app/app-confirm1', 
             {'assetPath' : assetPath });
       });
-
 /**IDA Paths AJC 16/12/14**/
       app.get('/app-ida1', function (req, res) {
           res.render('tamc_app/app-ida1', 
             {'assetPath' : assetPath });
+      });            
+            app.get('/app-ida2', function (req, res) {
+          res.render('tamc-app/app-ida2', 
+            {'assetPath' : assetPath });
       });
+          app.get('/app-ida3', function (req, res) {
+          res.render('tamc-app/app-ida3', 
+            {'assetPath' : assetPath });
+      });
+                app.get('/app-ida4', function (req, res) {
+          res.render('tamc-app/app-ida4', 
+            {'assetPath' : assetPath });
+      });    
+       app.get('/app-ida5', function (req, res) {
+          res.render('tamc-app/app-ida5', 
+            {'assetPath' : assetPath });
+      });
+      app.get('/app-ida6', function (req, res) {
+          res.render('tamc-app/app-ida6', 
+            {'assetPath' : assetPath });
+      });  
+      app.get('/app-ida7', function (req, res) {
+          res.render('tamc-app/app-ida7', 
+            {'assetPath' : assetPath });
+      });   
+    
 /***********/
 
     }    
