@@ -39,13 +39,10 @@
   <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.
   <br>For example, 'VO 12 34 56 D'.</span></label>
   <input id="ni-number" class="form-control" type="text">
-</div
+</div>
 
-
-     <div class="form-group">
-
-
-<fieldset>
+<div class="form-group">
+ <fieldset>
   <legend class="form-label-bold">Date of birth</legend>
   <div class="form-date">
     <p class="form-hint">For example, 31 3 1980</p>
@@ -64,6 +61,28 @@
   </div>
 </fieldset>
 </div>
+
+<div class="form-group">
+ <fieldset>
+  <legend class="form-label-bold">Date of marriage/civil partnership</legend>
+  <div class="form-date">
+    <p class="form-hint">For example, 31 3 1980</p>
+    <div class="form-group form-group-day">
+      <label for="ceremony-day">Day</label>
+      <input id="ceremony-day" class="form-control" type="number" max="31" min="0" pattern="[0-9]*">
+    </div>
+    <div class="form-group form-group-month">
+      <label for="ceremony-month">Month</label>
+      <input id="ceremony-month" class="form-control" type="number" max="12" min="0" pattern="[0-9]*">
+    </div>
+    <div class="form-group form-group-year">
+      <label for="ceremony-year">Year</label>
+      <input id="ceremony-year" class="form-control" type="number" max="2014" min="0" pattern="[0-9]*">
+    </div>
+  </div>
+</fieldset>
+</div>
+
 
 <div class="inner-block">
   <div class="form-group">
