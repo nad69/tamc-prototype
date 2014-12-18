@@ -1,53 +1,238 @@
-
-{{<layout}}
-
-{{$pageTitle}}Index{{/pageTitle}}
-
-{{$content}}
-
-
-
-<main id="content" role="main">
-
-<div class="inner-block">
-  <h1 class="heading-xlarge">Verify your identity</h1>
-
-<form id="validate-age-residency" method="link" action="app-ida5">
-<div class="form-group">
-<fieldset class="inline">
-<legend class="form-label-bold">Are you 19 or over?</legend>
-<label class="block-label" for="age-yes">
-<input id="age-yes" type="radio" value="true" name="age19YearsOrOver">
-Yes
-</label>
-<label class="block-label" for="age-no">
-<input id="age-no" type="radio" value="false" name="age19YearsOrOver">
-No
-</label>
-</fieldset>
+<!DOCTYPE html>
+<!--[if !IE]> <html lang="en"> <![endif]-->
+<!--[if lt IE 8]> <html class="ie-7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="ie-8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie-9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><!--[if gt IE 9]><!-->
+<!--[if gt IE 9]><!-->
+<html lang='en'>
+<!--<![endif]-->
+<head>
+<meta charset='utf-8'>
+<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"4552f65f1e","applicationID":"1945828","transactionName":"J19WRUFbVAkBFhkVUhdDUV5dRxcLARM=","queueTime":0,"applicationTime":28,"agentToken":null,"agent":"js-agent.newrelic.com/nr-476.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<title>Login - Digidentity</title>
+<link href="https://auth.digidentity.eu/assets/application-78fae896f6da484de238c0c9c06f3b6f.css" media="all" rel="stylesheet" />
+</head>
+<body class='en fullpage-body'>
+<a class='sr-only sr-only-focusable' href='#content'>Skip to content</a>
+<div id='header'>
+<div class='navbar navbar-default navbar-inverse'>
+<div class='container'>
+<ul class='nav navbar-nav navbar-right'>
+<li class='gov-uk-certified'>
+<a data-no-turbolinks="true" data-target="#return-to-govuk" data-toggle="modal" href="#">GOV.UK certified</a>
+</li>
+<li class='user-menu'>
+<div class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown'>
+<em class='fa fa-caret-down'></em>
+</a>
+<ul class='dropdown-menu' role='menu'>
+<li role='presentation'>
+<a href="/sign_in?locale=nl" lang="nl" role="menuitem" tabindex="-1">Nederlands</a>
+</li>
+<li role='presentation'>
+<a href="/sign_in?locale=en" lang="en" role="menuitem" tabindex="-1">English</a>
+</li>
+<li role='presentation'>
+<a href="/sign_in?locale=cy" lang="cy" role="menuitem" tabindex="-1">Cymraeg (Welsh)</a>
+</li>
+<li class='divider' role='presentation'></li>
+<li role='presentation'>
+<a href="https://my.digidentity.eu/contact_info" role="menuitem" tabindex="-1">Help</a>
+</li>
+<li role='presentation'>
+<a href="/sign_in" role="menuitem" tabindex="-1">Sign In</a>
+</li>
+<li role='presentation'>
+<a href="/register" role="menuitem" tabindex="-1">Register</a>
+</li>
+</ul>
 </div>
-<div class="form-group form-group-tight">
-<fieldset>
-<legend class="form-label-bold">Have you always lived in the UK?</legend>
-<label class="block-label" for="shortResidency-no">
-<input id="shortResidency-no" type="radio" value="false" name="shortResidency">
-Yes
-</label>
-<label class="block-label" for="shortResidency-less-than-12">
-<input id="shortResidency-less-than-12" type="radio" value="true" name="shortResidency">
-No - I moved to the UK within the last 12 months
-</label>
-<label class="block-label" for="shortResidency-more-than-12">
-<input id="shortResidency-more-than-12" type="radio" value="false" name="shortResidency">
-No - I moved to the UK more than 12 months ago
-</label>
-</fieldset>
+</li>
+<li class='help'>
+<a href="https://my.digidentity.eu/contact_info"><em class='fa fa-lg fa-question-circle'></em>
+</a></li>
+</ul>
 </div>
-<div class="form-group">
-<input id="next-button" class="button" type="submit" value="Next">
 </div>
+</div>
+<div class='footer-links-overlay'>
+<div class='footer-links-overlay-inner'>
+<div class='fullpage-wrapper fullpage-wrapper-photo js-scrolling-background' style='background-image: url(https://s3-eu-west-1.amazonaws.com/eu-digidentity-production-providerscreens/gov_uk_background2.jpg); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src=&#x0027;https://s3-eu-west-1.amazonaws.com/eu-digidentity-production-providerscreens/gov_uk_background2.jpg&#x0027;, sizingMethod=&#x0027;scale&#x0027;); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src=&#x0027;https://s3-eu-west-1.amazonaws.com/eu-digidentity-production-providerscreens/gov_uk_background2.jpg&#x0027;, sizingMethod=&#x0027;scale&#x0027;)"'>
+<div class='container container-relative'>
+<div class='fullpage-container-large' id='content'>
+<div class='fullpage-form-wrapper login'>
+<div class='wrapper'>
+<img alt="Gov.uk+verify" class="provider_logo" src="https://s3-eu-west-1.amazonaws.com/eu-digidentity-production-providerscreens/gov.uk+verify.png" />
+<div id='login'>
+<h2>Login</h2>
 
+<form accept-charset="UTF-8" action="app-start1" autocomplete="off" class="form-fluid" id="new_account" method="link"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="BjLiXi/tHzpz+G9O0YdeqXGql2sBMc44Dyr8C8pXWeU=" /></div><div class='form-group'>
+<label class='control-label' for='account_username'>Username</label>
+<input autofocus="autofocus" class="form-control" id="account_username" label="false" name="account[username]" type="text" />
+</div>
+<div class='form-group'>
+<label class='control-label' for='account_password'>Password</label>
+<input autocomplete="off" class="form-control" id="account_password" label="false" name="account[password]" type="text" />
+</div>
+<input class="btn btn-primary" name="commit" type="submit" value="Login" />
+<a class="btn btn-link" href="/recovery">Recover your login details</a>
 </form>
-</main>
-{{/content}}
-{{/layout}}
+
+</div>
+
+<ul class='actions'>
+<li class='login'><a class="active" href="/sign_in">Sign In</a></li>
+<li class='register'><a href="/accounts/new">Register</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class='fullpage-wrapper homepage-content intro'>
+<div class='container'>
+<div class='row'>
+<h1><span>dig<span class="green-text">i</span>dentity</span></h1>
+<h2>Your digital identity in 5 steps</h2>
+</div>
+</div>
+</div>
+<div class='fullpage-wrapper homepage-content steps'>
+<div class='container'>
+<div class='row steps'>
+<div class='col-md-4 col-sm-2 step'>
+<div class='header'>
+<div class='circle'>1</div>
+<div class='subtitle'>Create profile</div>
+</div>
+<div class='content'>Your digital identity begins by creating a Digidentity profile. With this identity you will be able to securely access online services provided by companies or government agencies.</div>
+</div>
+<div class='col-md-4 col-sm-2 step'>
+<div class='header'>
+<div class='circle'>2</div>
+<div class='subtitle'>Email confirmation</div>
+</div>
+<div class='content'>It is important that you add an email address to your profile. This can help you regain access to your profile in the case that you forget your password.</div>
+</div>
+<div class='col-md-4 col-sm-2 step'>
+<div class='header'>
+<div class='circle'>3</div>
+<div class='subtitle'>Secure your profile</div>
+</div>
+<div class='content'>To protect your digital identity we advise that you add 2-step login to your profile. This can be done, for example, by having a confirmation code sent to you via sms each time you log in.</div>
+</div>
+<div class='col-md-4 col-sm-2 step'>
+<div class='header'>
+<div class='circle'>4</div>
+<div class='subtitle'>Add personal details</div>
+</div>
+<div class='content'>We will ask for some personal details like your name or address to verify your identity. The specific questions asked of you will vary depending on the service you wish to access.</div>
+</div>
+<div class='col-md-4 col-sm-2 step'>
+<div class='header'>
+<div class='circle'>5</div>
+<div class='subtitle'>Prove your identity</div>
+</div>
+<div class='content'>To assure that you are who you say you are, we need proof of your identity, such as a passport or driving licence. Some service providers require a copy while others only need partial data.</div>
+</div>
+<div class='col-md-4 col-sm-2 step'>
+<div class='header'>
+<div class='subtitle'>Registration complete</div>
+</div>
+<div class='content'>After we verified your details, your Digidentity profile is ready to use and you can login to one of the service providers.</div>
+</div>
+</div>
+</div>
+</div>
+<div class='fullpage-wrapper homepage-content other'>
+<div class='container'>
+<div class='row easy'>
+<div class='col-md-4'>
+
+</div>
+<div class='col-md-8'>
+<h1>easy</h1>
+<h2>Verify your identity with ease</h2>
+<p>Prove your identity through our manual procedure or with our free mobile app, available for iOS and Android.</p>
+<p>With our mobile app you can use your smartphone to scan and upload your identity documents. We can then directly process your personal data and confirm that you are who you say you are. This creates a hassle-free registration experience, verifying your identity in the fastest way possible.</p>
+</div>
+</div>
+<div class='row identify'>
+<div class='col-md-8'>
+<h1><span>ident</span><span class="green-text">i</span><span>ty</span></h1>
+<h2>Create a safe, digital identity</h2>
+<p>Everyone should be able to identify themselves online in a simple, secure way. That is our mission! Digidentity offers solutions that enable safe digital communications between individuals, companies and governmental agencies. To this end, we are continuously developing new and improved services. The result, and most important aspect of this, is a unique digital identity that you, the user, are in full control of.</p>
+</div>
+<div class='col-md-4'>
+
+</div>
+</div>
+<div class='row security'>
+<div class='col-md-4'>
+</div>
+<div class='col-md-8'>
+<h1><span>secur</span><span class="green-text">i</span><span>ty</h1>
+<h2>Security and service as part of our process</h2>
+<p>At Digidentity, security is taken more than seriously. Data protection and privacy are of paramount importance to us. This means we start by providing a safe environment. Only when the system is completely secure will design be implemented. Thus, safety is guaranteed.</p>
+<p>We consider good service to be as important as infallible security. You can rely on our work to be meticulous and service-minded, and that we are readily available via chat, email and over the telephone during business hours. Any complaints or problems will be solved swiftly, and will be registered so that we can learn from them and make improvements to our service.</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div id='footer'>
+<div class='navbar navbar-default navbar-inverse'>
+<div class='container'>
+<ul class='nav navbar-nav navbar-right nav-copyright'>
+<li>
+Copyright &copy;
+2014
+</li>
+<li class='divider'>&nbsp; | &nbsp;</li>
+<li><a href="http://www.digidentity.eu">digidentity.eu</a></li>
+</ul>
+<ul id='service-navigation'>
+<li class='first'>
+<a href='https://helpdesk.digidentity.com/' target='_blank'>help</a>
+</li>
+<li class='last'>
+<a href='/terms_and_conditions/uk' target='_blank'>terms and conditions</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div aria-hidden='true' aria-labelledby='return-to-govukTitle' class='modal fade' id='return-to-govuk' role='dialog' tabindex='-1'>
+<div class='modal-center'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<button class='close' data-dismiss='modal'>
+<span aria-hidden='true'>&times;</span>
+<span class='sr-only'><span class="translation_missing" title="translation missing: en.return_to_govuk.close">Close</span></span>
+</button>
+<h4 class='modal-title' id='return-to-govukTitle'>Confirm Cancellation</h4>
+</div>
+<div class='modal-body'>If you continue you will be returned to your service provider. Are you sure you want to cancel?</div>
+<div class='modal-footer'>
+<a class="btn btn-link" data-dismiss="modal" href="#">No</a>
+<a class="btn btn-primary" data-method="post" href="/sso/cabinet/cancel" rel="nofollow">Yes</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
