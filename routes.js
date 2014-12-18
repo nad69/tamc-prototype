@@ -192,7 +192,7 @@ module.exports = {
       app.get('/app-ida1', function (req, res) {
           res.render('tamc_app/app-ida1', 
             {'assetPath' : assetPath });
-      });            
+      });      
             app.get('/app-ida2', function (req, res) {
           res.render('tamc-app/app-ida2', 
             {'assetPath' : assetPath });
