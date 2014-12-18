@@ -8,7 +8,7 @@
 
 
 <main id="content" role="main">
-
+ <form class="form b" method="get" action="app-done1">
 <div class="inner-block">
   <div class="header-context" id="global-breadcrumb">
     <ol class="group "role="breadcrumbs">
@@ -18,9 +18,7 @@
     </ol>
   </div>
   <h1 class="heading-large">Confirm your partner's details</h1>
-  <div class="panel-indent your-details">
-    <p>Please check the details above are correct before clicking on the 'Apply' button below.</p>
-  </div>
+    <p>Please check your partner's details below are correct</p>
 
 <div class="inner-block">
   <table>
@@ -49,7 +47,12 @@
 
 <div class="inner-block">
   <div class="form-group"><p class="paddingboost">
-<input type="submit" class="button next validation-submit" value="Continue" onsubmit="return checkEmail(this);"></p>
+      <div class="panel-indent">
+    <p>
+      By clicking on the 'Apply' button below, you will be transferring part of your personal tax allowance onto your partner (partner's name displayed here) to reduce the tax they pay.
+    </p>
+  </div>
+<input type="submit" class="button next validation-submit" value="Apply" onsubmit="return checkEmail(this);"></p>
 </div>
 </div>
 </main>
