@@ -161,6 +161,29 @@ module.exports = {
       });
 
 
+        /* pre-reg v1 iteration 5.5 - NM post user testing and show and tell 231214 */
+
+                        app.get('/start1_4', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_4', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/eligibility1_4', function (req, res) {
+          res.render('tamc_pre-reg_v1/eligibility1_4', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_4', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_4', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_4', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_4', 
+            {'assetPath' : assetPath });
+      });
+
+
       /* full app v1 iteration 1 - NM/JK post 08/11/14 */
 
             app.get('/app-start1', function (req, res) {
