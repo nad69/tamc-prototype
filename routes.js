@@ -161,7 +161,7 @@ module.exports = {
       });
 
 
-        /* pre-reg v1 iteration 5.5 - NM post user testing and show and tell 231214 */
+        /* pre-reg v1 iteration 5.5/5.6 (v2.5) - NM post user testing and show and tell 231214 */
 
                         app.get('/start1_4', function (req, res) {
           res.render('tamc_pre-reg_v1/start1_4', 
@@ -180,6 +180,46 @@ module.exports = {
 
             app.get('/confirm1_4', function (req, res) {
           res.render('tamc_pre-reg_v1/confirm1_4', 
+            {'assetPath' : assetPath });
+      });
+
+          /* pre-reg v1 iteration 5.7 (v2.5) - NM post GDS review wk beg 190115 incl all stakeholder and Challenge Panel amends */
+
+                        app.get('/start1_5', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_5', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/eligibility1_5', function (req, res) {
+          res.render('tamc_pre-reg_v1/eligibility1_5', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_5', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_5', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_5', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_5', 
+            {'assetPath' : assetPath });
+      });
+
+
+          /* pre-reg v1 iteration 5.8 (v3.0) - NM post GDS review and User Research A/B test 22-230115 */
+
+                        app.get('/start1_5b', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_5b', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_5b', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_5b', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_5b', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_5b', 
             {'assetPath' : assetPath });
       });
 
