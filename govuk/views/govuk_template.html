@@ -17,6 +17,7 @@
     <!--[if IE 8]><link href="{{assetPath}}stylesheets/govuk-template-ie8.css?0.8.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
     <link href="{{assetPath}}stylesheets/govuk-template-print.css?0.8.0" media="print" rel="stylesheet" type="text/css" />
+
     <!--[if IE 8]>
     <script type="text/javascript">
       (function(){if(window.opera){return;}
@@ -55,7 +56,7 @@
     {{$head}}{{/head}}
   </head>
 
-  <body class="{{$bodyClasses}}{{/bodyClasses}}">
+  <body class="{{$bodyClasses}}{{/bodyClasses}}">BOOOOO
     <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     <div id="skiplink-container">
@@ -67,15 +68,15 @@
     <div id="global-cookie-message">
       <div class="outer-block">
         <div class="inner-block">
-
+          
             {{$cookieMessage}}{{/cookieMessage}}
-
+          
         </div>
       </div>
     </div>
     <!--end global-cookie-message-->
 
-
+    
     <header role="banner" id="global-header" class="{{$headerClass}}{{/headerClass}}">
       <div class="header-wrapper">
         <div class="header-global">
@@ -90,7 +91,7 @@
       </div>
     </header>
     <!--end header-->
-
+    
 
     {{$afterHeader}}{{/afterHeader}}
 
@@ -98,8 +99,8 @@
       <div class="inner-block">
         <div class="header-bar"></div>
         <!--Start Quick fix Alpha Banner-->
-		<style>
-
+    <style>
+    
 .beta-label span.beta {
     background: none repeat scroll 0 0 #f47738;
     color: #fff;
@@ -112,15 +113,17 @@
     padding: 5px 5px 2px 6px;
     text-transform: uppercase;
 }
-		</style>
-		<div class="phase-banner">
-		 <div class="beta-label">
+    </style>
+    <div class="phase-banner">
+     <div class="beta-label">
 <span class="beta">beta</span>
-This part of GOV.UK is being rebuilt –
+This part of GOV.UK is being rebuilt 
 <a href="/help/beta"> find out what this means</a>
 </div>
-		 </div>
+     </div>
  <!--End Alpha Banner-->
+
+
       </div>
     </div>
     <!--end global-header-bar-->
