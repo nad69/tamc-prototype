@@ -223,6 +223,23 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+          /* pre-reg v1 iteration 5.9 (v3.1) - NM post User Research 22-230115 */
+
+                        app.get('/start1_5c', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_5c', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_5c', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_5c', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_5c', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_5c', 
+            {'assetPath' : assetPath });
+      });
+
 
       /* full app v1 iteration 1 - NM/JK post 08/11/14 */
 

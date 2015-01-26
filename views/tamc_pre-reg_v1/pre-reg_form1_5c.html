@@ -39,14 +39,9 @@ function checkEmail(theForm) {
     </ol>
   </div>
   <h1 class="heading-xlarge">Register your interest</h1>
-  <p>If you want to register your interest in transferring £1060 of your Personal Allowance in 2015/16, please give us your contact details now.
-  <p>We'll then email you when you can apply for the new Marriage Allowance.</p>
-  <p>Support will be available if needed.</p>
-<!--  <details>
-    <summary><span class="summary" role="button">Help with applying online</span></summary>
-    <div class="panel-indent">If you can't get online to apply when this service opens, a limited telephone service will be available.</div>
-  </details>-->
-<form class="form b" method="link" action="confirm1_5b" onsubmit="return checkEmail(this);">
+  <p>If you want to register your interest in transferring £1060 of your Personal Allowance in the tax year 2015 to 2016, please give us your contact details now.
+  <p>We'll then email you when you can apply for the new Marriage Allowance. Support will be available if needed.</p>
+<form class="form b" method="link" action="confirm1_5c" onsubmit="return checkEmail(this);">
 <fieldset class="validate">
  <div class="form-group">
     <label class="form-label" for="first-name">First name</label>
@@ -65,11 +60,6 @@ function checkEmail(theForm) {
     <input class="form-control" name="EMAIL2" id="email2" type="text">
   </div>
 <div id="emailMismatch"> </div>
-  <!--<p>and/or</p>
-  <div class="form-group">
-    <label class="form-label" for="mobile-2">Mobile text alert</label>
-    <input class="form-control" id="mobile-2" type="text">
-  </div>-->
 
 </fieldset>
 
@@ -77,10 +67,12 @@ function checkEmail(theForm) {
   <div class="form-group">
 <fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
  <div class="form-group"> 
-  <label class="form-checkbox" for="checkbox-telephone-number">
-    <input id="checkbox-contactable-for-research" type="checkbox" value="checkbox-contactable-for-research">
-    You may contact me about improving this service.
-  </label>
+    <fieldset>
+    <label class="block-label" for="checkbox-1">
+      <input id="checkbox-1" type="checkbox" value="waste-animal">
+      You may contact me about improving this service.
+    </label>
+  </fieldset>
   </div>
     <div class="panel-indent your-details">
     <p>
