@@ -1,0 +1,87 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+
+<main id="content" role="main">
+
+     <style>
+    .third
+    {width:65%;}
+    .validate{padding-top: 10px;}
+    </style>
+<script type="text/javascript" language="JavaScript">
+<!--
+//--------------------------------
+// Quick Dirty Compare 2 fields for proto
+//--------------------------------
+function checkEmail(theForm) {
+    if (theForm.EMAIL1.value != theForm.EMAIL2.value)
+    {
+        //alert('NO MATCHY');
+        document.getElementById("emailMismatch").innerHTML = "<div class='validation-message'>Your email address does not match, please check and submit again</div>";
+        return false;
+    } else {
+        return true;
+    }
+}
+//-->
+</script> 
+<div class="inner-block third">
+  <div class="header-context" id="global-breadcrumb">
+    <ol class="group "role="breadcrumbs">
+      <li><a href="/start1_5d">Home</a></li>
+      <li>Register your interest</li>
+    </ol>
+  </div>
+  <h1 class="heading-xlarge">Register your interest</h1>
+  <p>Give us your contact details now if you want to register your interest in the new Marriage Allowance.
+  <p>We'll then email you when you can apply. Support will be available if needed.</p>
+<form class="form b" method="link" action="confirm1_5d" onsubmit="return checkEmail(this);">
+<fieldset class="validate">
+ <div class="form-group">
+    <label class="form-label" for="first-name">First name</label>
+    <input class="form-control" id="first-name" type="text">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="last-name-2">Last name</label>
+    <input class="form-control" id="last-name-2" type="text">
+  </div>
+   <div class="form-group">
+    <label class="form-label" for="email1">Email</label>
+    <input class="form-control" name="EMAIL1" id="email1" type="text">
+  </div>
+     <div class="form-group">
+    <label class="form-label" for="email2">Confirm email</label>
+    <input class="form-control" name="EMAIL2" id="email2" type="text">
+  </div>
+<div id="emailMismatch"> </div>
+
+</fieldset>
+
+<fieldset class="inline">
+  <div class="form-group">
+<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
+ <div class="form-group"> 
+    <fieldset>
+    <label class="block-label" for="checkbox-1">
+      <input id="checkbox-1" type="checkbox" value="waste-animal">
+      HMRC may contact me about improving this service.
+    </label>
+  </fieldset>
+  </div>
+    <div class="panel-indent your-details">
+    <p>
+      Your details won't be shared with anyone and are completely secure.
+    </p>
+  </div>
+</fieldset>
+  <input type="submit" class="button next validation-submit" value="Register" onsubmit="return checkEmail(this);">
+</main>
+</form>
+{{/content}}
+{{/layout}}

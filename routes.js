@@ -240,6 +240,22 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+          /* pre-reg v1 iteration 6.0 (v3.2) - NM post User Research 260115 prep for beta/live */
+
+                        app.get('/start1_5d', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_5d', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_5d', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_5d', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_5d', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_5d', 
+            {'assetPath' : assetPath });
+      });
 
       /* full app v1 iteration 1 - NM/JK post 08/11/14 */
 
