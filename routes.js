@@ -257,6 +257,23 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+      /* pre-reg v1 iteration 7.0 (v3.3) - 02 February 2015 - Post GDS Beta Assessment - Sprint 5*/
+
+                        app.get('/start1_6', function (req, res) {
+          res.render('tamc_pre-reg_v1/start1_6', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/pre-reg_form1_6', function (req, res) {
+          res.render('tamc_pre-reg_v1/pre-reg_form1_6', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/confirm1_6', function (req, res) {
+          res.render('tamc_pre-reg_v1/confirm1_6', 
+            {'assetPath' : assetPath });
+      });
+
       /* full app v1 iteration 1 - NM/JK post 08/11/14 */
 
             app.get('/app-start1', function (req, res) {
