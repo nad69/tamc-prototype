@@ -259,7 +259,7 @@ module.exports = {
 
       /* pre-reg v1 iteration 7.0 (v3.3) - 02 February 2015 - Post GDS Beta Assessment - Sprint 5*/
 
-                        app.get('/start1_6', function (req, res) {
+            app.get('/start1_6', function (req, res) {
           res.render('tamc_pre-reg_v1/start1_6', 
             {'assetPath' : assetPath });
       });
