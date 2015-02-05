@@ -30,13 +30,18 @@ function checkEmail(theForm) {
     }
 }
 //-->
-</script> 
+</script>
 <div class="inner-block third">
   <h1 class="heading-xlarge">Register your interest</h1>
-  <p>Give us your contact details now if you want to register your interest in the new Marriage Allowance.
-  <p>We'll then email you when you can apply. Support will be available if needed.</p>
+  <p>Give us your contact details now if you want to register your interest in the new Marriage Allowance. We'll then email you when you can apply. Support will be available if needed.</p>
 <form class="form b" method="link" action="confirm1_6" onsubmit="return checkEmail(this);">
 <fieldset class="validate">
+  <style>
+.form-control
+{
+  min-width: 75%;
+}
+</style>
  <div class="form-group">
     <label class="form-label" for="first-name">First name</label>
     <input class="form-control" id="first-name" type="text">
@@ -60,7 +65,7 @@ function checkEmail(theForm) {
 <fieldset class="inline">
   <div class="form-group">
 <fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
- <div class="form-group"> 
+ <div class="form-group">
     <fieldset>
     <label class="block-label" for="checkbox-1">
       <input id="checkbox-1" type="checkbox" value="waste-animal">
