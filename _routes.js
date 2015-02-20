@@ -302,44 +302,17 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+
+             app.get('/app-start1_2', function (req, res) {
+          res.render('tamc-app/app-start1_2', 
+            {'assetPath' : assetPath });
+      });
+
+
             app.get('/app-done1', function (req, res) {
           res.render('tamc-app/app-done1', 
             {'assetPath' : assetPath });
       });
-
-      /* full app v1.0 iteration 2 - NM Sprint 5/6 Wed 110215 */
-
-            app.get('/app-start1_2', function (req, res) {
-          res.render('tamc-app/app-start1_2', 
-            {'assetPath' : assetPath });
-
-      });
-
-            app.get('/app-calc1_2', function (req, res) {
-          res.render('tamc-app/app-calc1_2', 
-            {'assetPath' : assetPath });
-      });
-
-            app.get('/app-ida1_2', function (req, res) {
-          res.render('tamc-app/app-ida1_2', 
-            {'assetPath' : assetPath });
-      });
-
-            app.get('/app-form1_2', function (req, res) {
-          res.render('tamc-app/app-form1_2', 
-            {'assetPath' : assetPath });
-      });
-
-            app.get('/app-confirm1_2', function (req, res) {
-          res.render('tamc-app/app-confirm1_2', 
-            {'assetPath' : assetPath });
-      });
-
-            app.get('/app-finished1_2', function (req, res) {
-          res.render('tamc-app/app-finished1_2', 
-            {'assetPath' : assetPath });
-      });
-
 
 
 /**IDA Paths AJC 16/12/14**/
@@ -380,7 +353,6 @@ module.exports = {
           res.render('tamc-app/app-ida7_1', 
             {'assetPath' : assetPath });
       });   
-
     
 /***********/
 

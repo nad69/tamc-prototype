@@ -1,0 +1,61 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+
+<main id="content" role="main">
+
+     <style>
+    .third
+    {width:65%;}
+    .validate{padding-top: 10px;}
+    </style>
+<script type="text/javascript" language="JavaScript">
+<!--
+//--------------------------------
+// Quick Dirty Compare 2 fields for proto
+//--------------------------------
+function checkEmail(theForm) {
+    if (theForm.EMAIL1.value != theForm.EMAIL2.value)
+    {
+        //alert('NO MATCHY');
+        document.getElementById("emailMismatch").innerHTML = "<div class='validation-message'>Your email address does not match, please check and submit again</div>";
+        return false;
+    } else {
+        return true;
+    }
+}
+//-->
+</script> 
+<div class="inner-block third">
+  <h1 class="heading-xlarge">Tax saving estimator</h1>
+  <p>You can get an estimate on how much you can reduce your husband, wife or civil partner's tax by entering your incomes into the fields below.
+  <p>We'll then advise you if it's worth moving on to applying based on the incomes you enter.</p>
+<form class="form b" method="link" action="confirm1_6" onsubmit="return checkEmail(this);">
+<fieldset class="validate">
+ <div class="form-group">
+    <label class="form-label" for="first-name">Your income (£)</label>
+    <input class="form-control" id="first-name" type="text">
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's income (£)</label>
+    <input class="form-control" id="last-name-2" type="text">
+  </div>
+</fieldset>
+<input type="submit" class="button next validation-submit" value="Estimate tax saving" onsubmit="return checkEmail(this);">
+    <div class="panel-indent your-details">
+    <p>
+      Feedback text goes here..
+    </p>
+  </div>
+       <a href="app-ida1" button class="button">Continue</a>
+       <a href="app-confirm1_2" button class="button">Continue to application form</a>
+</fieldset>
+</main>
+</form>
+{{/content}}
+{{/layout}}

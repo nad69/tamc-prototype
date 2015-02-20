@@ -1,0 +1,53 @@
+{{<govuk_template}}
+    {{$head}}
+      {{>head}}
+      <!-- Additional head code, CSS, JS specific only to this file here. If needed on other screens consider moving to separate file -->
+    {{/head}}
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
+   
+    {{$footerTop}}
+                {{>footer_links}}
+    {{/footerTop}}
+   
+    {{$pageTitle}}
+        Start
+    {{/pageTitle}}
+   
+    {{$content}}
+ 
+<main id="content" role="main"><div id="content">
+  {{>hmrc_banner}}
+     <style>
+    .third
+    {width:72%;}
+    </style>
+  <div class="grid-wrapper">
+    <div class="grid grid 4-3-4">
+      <div class="inner-block third">
+        <h1 class="heading-xlarge">Apply for Marriage Allowance<br></h1>
+        <p>If your <a href="https://www.gov.uk/income-tax/overview">income</a> is less than £10,600 in the 2015 to 2016 tax year, you may be able to reduce your husband, wife or civil partner’s tax by up to £212.</p>
+        <p>The new Marriage Allowance will let you transfer some of your Personal Allowance to your partner. This is the amount of income people can get before paying tax.</p>
+                <h1 class="heading-large">Tax saving estimator</h1>
+                <p>Before you make a claim, you can also get an estimate of how much you can reduce your husband, wife or civil partner's tax by using our <a href="app-calc1_2">tax saving estimator</a> tool.</p>
+        <p>You can then apply and get an email confirming your claim. It’ll take around 10 minutes.</p>
+
+                <a href="app-calc1_2" button class="button button-get-started">Start now</a>
+
+                <div class="article-container group">
+                <article role="article" class="group">
+
+                      <h1 class="heading-large">Before you start</h1>
+                      <p>You’ll be able to claim Marriage Allowance if all the following apply:</p>
+                      <ul class="list-bullet">
+                        <li>you’re married or in a civil partnership</li> 
+                        <li>you have an annual income of less than £10,600 - including pensions,savings and investments</li>
+                        <li>your spouse or civil partner has an annual income of between £10,601 and £42,385</li>
+                        <li>you were both born on or after 6 April 1935</li>
+                      </ul>
+                    </article>
+                  </div>
+   
+</main>
+{{/content}}
+{{/govuk_template}}
