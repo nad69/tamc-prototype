@@ -380,6 +380,11 @@ module.exports = {
           res.render('tamc-app/app-ida7_1', 
             {'assetPath' : assetPath });
       });   
+/***************You are Authenticated***************/
+      app.get('/app-calc1_2verified', function (req, res) {
+          res.render('tamc-app/app-calc1_2verified', 
+            {'assetPath' : assetPath });
+      });   
 
     
 /***********/
