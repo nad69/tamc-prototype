@@ -381,8 +381,8 @@ module.exports = {
             {'assetPath' : assetPath });
       });   
 /***************You are Authenticated***************/
-      app.get('/app-calc1_2verified', function (req, res) {
-          res.render('tamc-app/app-calc1_2verified', 
+      app.get('/app-form1_2verified', function (req, res) {
+          res.render('tamc-app/app-form1_2verified', 
             {'assetPath' : assetPath });
       });   
 

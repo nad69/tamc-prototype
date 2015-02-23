@@ -302,13 +302,6 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
-
-             app.get('/app-start1_2', function (req, res) {
-          res.render('tamc-app/app-start1_2', 
-            {'assetPath' : assetPath });
-      });
-
-
             app.get('/app-done1', function (req, res) {
           res.render('tamc-app/app-done1', 
             {'assetPath' : assetPath });

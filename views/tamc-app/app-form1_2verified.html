@@ -4,6 +4,14 @@
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
+<style>
+  .verify{
+  color:#424242;
+  padding-left:54%;
+  padding-top:20px;
+}
+</style>
+<h1 class="verify">John Smith, you last signed in on Saturday 21 February 2015</h1>
 
 
 
@@ -67,7 +75,8 @@ function checkEmail(theForm) {
     <span class="form-hint">For example, QQ 12 34 56 C</span>
     <input class="form-control" name="EMAIL1" id="email1" type="text">
   </div>
-<!--          <p>Please give us your email address so that we can send you a confirmation<br>of your claim.</p>
+<!--       <div class="form-group">
+          <p>Please give us your email address so that we can send you a confirmation<br>of your claim.</p>
     <label class="form-label" for="email2">Your email</label>
     <input class="form-control" name="EMAIL2" id="email2" type="text">
   </div>
