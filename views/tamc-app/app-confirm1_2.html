@@ -23,8 +23,8 @@
   <div class="grid-wrapper">
     <div class="grid grid 4-3-4">
       <div class="inner-block third">
-  <h1 class="heading-large">Your partner’s details</h1>
-    <p>Check the details you’ve entered about your partner. Make sure you're happy with the information you gave before calculating how much you can transfer.</p>
+  <h1 class="heading-large">Check your partner’s details</h1>
+    <p>Check the details you`ve entered about your partner and make sure this is the person you want to transfer £1,060 of your Personal Allowance to. </p>
 
   <table>
     <tr>
@@ -46,7 +46,18 @@
   </table>
 
   <div class="form-group"><p class="paddingboost">
-<p>If this is not the correct person go <a href="javascript:history.go(-1)">back to the previous page</a> to try again.</p>
+<p>If it's not the correct person go <a href="javascript:history.go(-1)">back to the previous page</a> to enter their details again.</p>
+
+
+<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
+ <div class="form-group"> 
+    <fieldset>
+    <label class="block-label" for="checkbox-1">
+      <input id="checkbox-1" type="checkbox" value="waste-animal">
+      By ticking this box you are making a legal declaration that you are this person’s husband, wife or civil partner before applying to transfer your Personal Allowance. 
+    </label>
+  </fieldset>
+
    <!--   <div class="panel-indent">
     <p>
       By clicking on the 'Apply' button below, you will be transferring your personal tax allowance on to your (partner's name displayed here) to reduce the tax they pay.
@@ -56,7 +67,7 @@
     </p>
   </div>-->
   <div>
-<a href="app-finished1_2" button class="button">Confirm</a>
+ <div class="form-group"><p><a href="app-finished1_2" button class="button">Apply</a></p></div>
 </div>
 </main>
 {{/content}}

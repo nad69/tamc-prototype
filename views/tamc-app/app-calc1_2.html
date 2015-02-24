@@ -4,7 +4,17 @@
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
+<style type="text/css">
+#sub3 {
+display: none;
+}
+</style>
 
+<script language="JavaScript">
+function showDiv() {
+   document.getElementById('sub3').style.display = "block";
+}
+</script>
 <style>
 
 .destination {
@@ -20,32 +30,43 @@
 }
 </style>
 
+
+
+
+<br><br>
+
 <main id="content" role="main">
 
 <div class="inner-block third">
-  <h1 class="heading-xlarge">Marriage Allowance calculator</h1>
-  <p>Use the Marriage Allowance calculator to work out how much of your Personal Allowance you can transfer by telling us yours and your husband, wife or civil partner's income.</p>
-<form class="form b" method="link" action="#" >
+  <h1 class="heading-large">Marriage Allowance calculator</h1>
+  <p>Find out how much less tax your spouse or civil partner would pay by transferring your Personal Allowance to them. </p>
+  <p>This should help you decide whether or not to apply. </p>
+
 <fieldset class="validate">
  <div class="form-group">
-    <label class="form-label" for="first-name">Your income £</label>
-    <input class="form-control" id="first-name" type="text">
+    <label class="form-label" for="first-name">Your income</label>
+    £&nbsp;<input class="form-control" id="first-name" type="text">
   </div>
-  <div class="form-group">
-    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's income £</label>
-    <input class="form-control" id="last-name-2" type="text">
+  <div class="form-group" id="here">
+    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's income </label>
+    £&nbsp;<input class="form-control" id="last-name-2" type="text">
   </div>
 </fieldset>
-<input type="submit" class="button next validation-submit" value="Calculate" onsubmit="return checkEmail(this);">
-    <div class="panel-indent your-details">
-    <p>
-      Dynamic Answer here
-    </p>
+
+<input type="submit" id='bt1'  class="button next validation-submit" value="Calculate" onclick="showDiv()">
+<div id="sub3" style="display:none;">
+  <div class="panel-indent your-details">
+    <p>Based on the information you gave us, your spouse or partner would benefit by around £xxxxx </p>
   </div>
-       <a href="app-ida1" button class="button">Start now</a> <span class="destination">on GOV.UK verify</span>
+</div>
+<div>To use this service, you first need to register with GOV.UK. You’ll be asked some questions to verify your identity, which will take about 10 minutes.
+<p>You can register for a profile online</p> </div>
+    <p>
+       <a href="app-ida1" button class="button" >Verify now</a> <span class="destination">on GOV.UK verify</span>
+    </p>   
        <!--<a href="app-form1_2" button class="button">Continue to application form</a>-->
 </fieldset>
 </main>
-</form>
+
 {{/content}}
 {{/layout}}
