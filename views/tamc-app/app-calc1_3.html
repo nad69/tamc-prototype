@@ -1,0 +1,76 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+<style type="text/css">
+#sub3 {
+display: none;
+}
+</style>
+
+<script language="JavaScript">
+function showDiv() {
+   document.getElementById('sub3').style.display = "block";
+}
+</script>
+<style>
+
+.destination {
+    color: #0b0c0c;
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-top: 0.5em;
+    max-width: 13em;
+    text-transform: none;
+}
+</style>
+
+
+
+
+<br><br>
+
+<main id="content" role="main">
+
+<div class="inner-block third">
+  <h1 class="heading-large">Marriage Allowance calculator</h1>
+  <p>Find out how much less tax your spouse or civil partner would pay by transferring your Personal Allowance to them. </p>
+  <p>This should help you decide whether or not to apply. </p>
+
+<fieldset class="validate">
+ <div class="form-group">
+    <label class="form-label" for="first-name">Your income<br>
+      <span class="form-hint">(less than £10,600)</span></label>
+    £&nbsp;<input class="form-control" id="first-name" type="text">
+  </div>
+  <div class="form-group" id="here">
+    <label class="form-label" for="last-name-2">Your spouse or partner's income<br>
+    <span class="form-hint">(between £10,601 and £42,385)</span></label>
+    £&nbsp;<input class="form-control" id="last-name-2" type="text">
+  </div>
+</fieldset>
+
+<input type="submit" id='bt1'  class="button next validation-submit" value="Calculate" onclick="showDiv()">
+<input type="submit" id='bt2'  class="button next validation-submit" value="Reset" onclick="hideDiv()">
+<div id="sub3" style="display:none;">
+  <div class="panel-indent your-details">
+    <p>Based on the information you gave us, your spouse or partner would benefit by around £xxxxx.<br>Please note that this amount may vary subject to your income information currently held by HMRC and your personal circumstances between now and the end of the tax year.</p>
+  </div>
+</div>
+        <h1 class="heading-large">Verify your identity</h1>
+<div>To use this service, you first need to register with GOV.UK. You’ll be asked some questions to verify your identity, which will take about 10 minutes. 
+<p>You can register for a profile online. If you're already registered you can simply login and will be brought back to the Marriage Allowance service to continue your application.</p> </div>
+    <p>
+       <a href="app-ida1" button class="button" >Verify now</a> <span class="destination">on GOV.UK verify</span>
+    </p>   
+       <!--<a href="app-form1_2" button class="button">Continue to application form</a>-->
+</fieldset>
+</main>
+
+{{/content}}
+{{/layout}}

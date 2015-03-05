@@ -340,6 +340,39 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+     /* full app v2.0 iteration 3 - NM internal Sprint 7 Wed040315*/
+
+            app.get('/app-start1_3', function (req, res) {
+          res.render('tamc-app/app-start1_3', 
+            {'assetPath' : assetPath });
+
+      });
+
+            app.get('/app-calc1_3', function (req, res) {
+          res.render('tamc-app/app-calc1_3', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/app-ida1_2', function (req, res) {
+          res.render('tamc-app/app-ida1_2', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/app-form1_3', function (req, res) {
+          res.render('tamc-app/app-form1_3', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/app-confirm1_3', function (req, res) {
+          res.render('tamc-app/app-confirm1_3', 
+            {'assetPath' : assetPath });
+      });
+
+            app.get('/app-finished1_3', function (req, res) {
+          res.render('tamc-app/app-finished1_3', 
+            {'assetPath' : assetPath });
+      });
+
 
 
 /**IDA Paths AJC 16/12/14**/

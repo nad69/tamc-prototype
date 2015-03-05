@@ -1,0 +1,54 @@
+{{<govuk_template}}
+    {{$head}}
+      {{>head}}
+      <!-- Additional head code, CSS, JS specific only to this file here. If needed on other screens consider moving to separate file -->
+    {{/head}}
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
+   
+    {{$footerTop}}
+                {{>footer_links}}
+    {{/footerTop}}
+   
+    {{$pageTitle}}
+        Start
+    {{/pageTitle}}
+   
+    {{$content}}
+ 
+<main id="content" role="main"><div id="content">
+  {{>hmrc_banner}}
+     <style>
+    .third
+    {width:72%;}
+    </style>
+  <div class="grid-wrapper">
+    <div class="grid grid 4-3-4">
+      <div class="inner-block third">
+        <h1 class="heading-large">Apply for Marriage Allowance</h1>
+        <p>For the tax year 2015 to 2016, most people will be able to earn up to £10,600 a year before paying tax on their <a href="https://www.gov.uk/income-tax/overview">income</a> which includes pensions, savings and investments. This is called a <a href="https://www.gov.uk/income-tax-rates">Personal Allowance</a>.</p><p>If your income is less than £10,600 (£880 a month), Marriage Allowance lets you transfer £1,060 of your Personal Allowance to your spouse or civil partner.</p>
+        
+        <div class="panel-indent"><p>This may reduce the amount of tax they pay each week or month and could be worth up to £212 a year. </p></div>
+        
+        <h2 class="heading-medium">Before you start</h2>
+        <p>You’ll be able to claim Marriage Allowance if all the following apply:</p>
+          <ul class="list-bullet">
+            <li>you’re married or in a <a href="xxxxxxxxxx">legally registered civil partnership</a></li> 
+            <li>you have an annual income of less than £10,600 - including pensions,savings and investments</li>
+            <li>your spouse or civil partner has an annual income of between £10,601 and £42,385</li>
+            <li>you were both born on or after 6 April 1935</li>
+          </ul>
+          <h2 class="heading-medium">Steps to apply for Marriage Allowance</h2>
+        <p>1. Use the <a href="app-calc1_3">Marriage Allowance calculator</a> to find out how much you can reduce your spouse or partner's tax by (optional)</p>
+        <p>2. Verify your identity by registering for the Verify service or login if you're already registered</p>
+        <p>3. Give us your partner's details to make the transfer to them (You'll need their first name, last name, gender and national insurance number)</p>
+        <p>4. Confirm your spouse or partner's details and apply</p>
+        <!--<h1 class="heading-large">Marriage Allowance calculator</h1>
+        <p>You can use the <a href="app-calc1_3.html">calculator</a> to see how much you can reduce your spouse or civil partner's tax by.</p>*/-->
+
+           <div class="panel-indent">It takes around 10 minutes to apply. You’ll get an email confirming your claim. </div>
+        <a href="app-calc1_2" button class="button button-get-started">Start now</a>
+   
+</main>
+{{/content}}
+{{/govuk_template}}
