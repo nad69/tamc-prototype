@@ -340,7 +340,7 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
-     /* full app v2.0 iteration 3 - NM internal Sprint 7 Wed040315*/
+     /* full app v3.0 iteration 3 - NM internal Sprint 7 Wed050315*/
 
             app.get('/app-start1_3', function (req, res) {
           res.render('tamc-app/app-start1_3', 
@@ -353,9 +353,16 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
+            app.get('/app-verify1_3', function (req, res) {
+          res.render('tamc-app/app-verify1_3', 
+            {'assetPath' : assetPath });
+
+      });
+
             app.get('/app-ida1_2', function (req, res) {
           res.render('tamc-app/app-ida1_2', 
             {'assetPath' : assetPath });
+
       });
 
             app.get('/app-form1_3', function (req, res) {

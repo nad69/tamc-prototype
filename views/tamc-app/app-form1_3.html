@@ -33,22 +33,23 @@ function checkEmail(theForm) {
 //-->
 </script> 
 <div class="inner-block third">
-  <h1 class="heading-xlarge">Give us your partner's details</h1>
-  <p>Based on the information you gave us, you may benefit by £xxxxx</p>
-  <p>Enter details about your partner to transfer that amount to them.</p>
-<form class="form b" method="link" action="app-confirm1_2" onsubmit="return checkEmail(this);">
+  <span class="form-hint">Step 3 of 4</span></label>
+  <h1 class="heading-xlarge">Your husband, wife or civil partner's details</h1>
+  <p>Provide details about your husband, wife of civil partner to set them up as a recipient of your Personal Allowance where you will be the transferor.</p>
+  <p>Enter details about your husband, wife or civil partner.</p>
+<form class="form b" method="link" action="app-confirm1_3" onsubmit="return checkEmail(this);">
 <fieldset class="validate">
  <div class="form-group">
-    <label class="form-label" for="first-name">First name</label>
+    <label class="form-label" for="first-name">Husband, wife or civil partner’s first name</label>
     <input class="form-control" id="first-name" type="text">
   </div>
   <div class="form-group">
-    <label class="form-label" for="last-name-2">Last name</label>
+    <label class="form-label" for="last-name-2">Husband, wife or civil partner’s last name</label>
     <input class="form-control" id="last-name-2" type="text">
   </div>
     <div class="form-group">
             <fieldset class="validate " data-validation-name="gender" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="male female">
-            <label class="form-label" for="gender">Gender</label>
+            <label class="form-label" for="gender">Their gender</label>
 
         <label for="gender_male" class="selectable selected">
             <input type="radio" id="gender_male" name="gender.male" value="Male" class="radio  validate" data-validation-name="male" data-validation-type="field" data-validation-rules="nonEmpty">
@@ -63,19 +64,15 @@ function checkEmail(theForm) {
     </fieldset>
   </div>
    <div class="form-group">
-    <label class="form-label" for="email1">National Insurance (NI) number</label>
+    <label class="form-label" for="email1">Their National Insurance (NI) number</label>
     <span class="form-hint">For example, QQ 12 34 56 C</span>
     <input class="form-control" name="EMAIL1" id="email1" type="text">
   </div>
-<!--          <p>Please give us your email address so that we can send you a confirmation<br>of your claim.</p>
+  <h2 class="heading-large">Confirmation email</h2>
+<p>We need to email confirmation of your application.</p>
     <label class="form-label" for="email2">Your email</label>
     <input class="form-control" name="EMAIL2" id="email2" type="text">
   </div>
-     <div class="form-group">
-    <label class="form-label" for="email2">Confirm your email</label>
-    <input class="form-control" name="EMAIL2" id="email2" type="text">
-  </div>
-<div id="emailMismatch"> </div>
 
 </fieldset>
 
@@ -83,21 +80,10 @@ function checkEmail(theForm) {
   <div class="form-group">
 <fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
  <div class="form-group"> 
-    <fieldset>
-    <label class="block-label" for="checkbox-1">
-      <input id="checkbox-1" type="checkbox" value="waste-animal">
-      HMRC may contact me about improving this service.
-    </label>
-  </fieldset>
+    <input type="submit" class="button next validation-submit" value="Submit" onsubmit="return checkEmail(this);">
   </div>
-    <div class="panel-indent your-details">
-    <p>
-      Your details won't be shared with anyone and are completely secure.
-    </p>
-  </div>
-</fieldset>-->
-  <input type="submit" class="button next validation-submit" value="Submit" onsubmit="return checkEmail(this);">
 </main>
-</form>
+</fieldset>
+</fieldset>
 {{/content}}
 {{/layout}}
