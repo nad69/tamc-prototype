@@ -1,0 +1,47 @@
+
+{{<layout}}
+{{$pageTitle}}Index{{/pageTitle}}
+{{$content}}
+<main id="content" role="main">
+<div class="inner-block">
+  <div class="grid-section">
+    <div class="grid-2-3">
+      <h1 class="heading-large">Who verified you?</h1>
+    </div><!--Close Grd 2-3-->
+  </div><!--Close GridSection-->
+<div class="grid-section" id="matching-idps">
+        <div class="grid-1-3">
+          <div class="company">
+            <div class="company-inner">
+              <div class="company-logo">
+                <div class="company-logo-inner">
+                  <img alt="Experian" src="public/experian.png">
+                </div>
+              </div>
+              <form class="idp-option2" action="app-exp1v3" method="link">
+                <button title="Experian"  class="button" type="submit">Select Experian</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-section" id="non-matching-idps">
+        <div class="grid-1-3">
+          <div class="company">
+            <div class="company-inner">
+              <div class="company-logo">
+                <div class="company-logo-inner">
+                  <img alt="Digidentity" src="public/digidentity.png">
+                </div>
+              </div>
+              <form class="idp-option3" action="app-ida4" method="link">
+                <button title="Digidentity" class="button" type="submit">Select Digidentity!</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+{{/content}}
+{{/layout}}

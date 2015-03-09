@@ -19,11 +19,11 @@ display: none;
     var total = (firstnumber + secondnumber);
     // display total
     //document.getElementById("totalMsg").innerHTML = "The total income is " + total;
-    if (total >= 10601)//greater than 50
+    if (total >= 10601)//greater than 
     {
       var result = "As a couple, you won't benefit by £XXX.";
     }
-    else if (total <= 10600)//less than 50
+    else if (total <= 10601)//less than 50
     {
       var result = "As a couple, you’ll benefit by £XXX.";
     }
@@ -37,6 +37,9 @@ function showDiv() {
 }
 </script>
 <style>
+.heading-xlarge {
+margin-top:0px;
+}
 .destination {
     color: #0b0c0c;
     display: block;
@@ -50,7 +53,7 @@ function showDiv() {
 }
 .steps{
   color:#6f777b;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-left: 30px;
 }
 .third {
@@ -63,6 +66,10 @@ function showDiv() {
   border-bottom: solid thin #6f777b;
   margin-bottom: 20px;
 } 
+.push-button{
+  padding-top: 20px;
+  display:inline-block;
+}
 </style>
 <main id="content" role="main">
   <div class="steps">Step 1 of 4</div>
@@ -79,7 +86,7 @@ function showDiv() {
     £&nbsp;<input class="form-control" id="firstnumber" name="firstnumber" type="text">
   </div>
   <div class="form-group" id="here">
-    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's annual incomebr>
+    <label class="form-label" for="last-name-2">Your husband, wife or civil partner's annual income
     <span class="form-hint">Must be between £10,601 and £42,385. No commas, spaces or decimal points.</span></label>
     £&nbsp;<input class="form-control" id="secondnumber" name="secondnumber" type="text">
   </div>
@@ -92,7 +99,7 @@ function showDiv() {
 </div>
 </fieldset>
 </form>
-<div class="next">
+<div class="push-button">
   <a href="app-verify1_3" button class="button">Next</a>
 </div>
 </main>

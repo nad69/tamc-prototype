@@ -375,8 +375,32 @@ module.exports = {
             {'assetPath' : assetPath });
       });
 
-            app.get('/app-finished1_3', function (req, res) {
+            app.get('/app-ida1_3', function (req, res) {
+          res.render('tamc-app/app-ida1_3', 
+            {'assetPath' : assetPath });
+      });
+                        app.get('/app-ida1v3', function (req, res) {
+          res.render('tamc-app/app-ida1v3', 
+            {'assetPath' : assetPath });
+      });
+                        app.get('/app-ida1v3', function (req, res) {
+          res.render('tamc-app/app-ida1v3', 
+            {'assetPath' : assetPath });
+      });
+        app.get('/app-finished1_3', function (req, res) {
           res.render('tamc-app/app-finished1_3', 
+            {'assetPath' : assetPath });
+      });
+                app.get('/email_alertv1', function (req, res) {
+          res.render('tamc-app/email_alertv1', 
+            {'assetPath' : assetPath });
+      });
+
+
+
+
+            app.get('/app-exp1v3', function (req, res) {
+          res.render('tamc-app/app-exp1v3', 
             {'assetPath' : assetPath });
       });
 
