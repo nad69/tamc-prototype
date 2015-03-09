@@ -10,13 +10,33 @@ display: none;
 }
 </style>
 
+  <script>
+  function calculate()
+  {
+    //3 variables, firstnumber, secondnumber and total
+    var firstnumber = parseInt(document.getElementById("firstnumber").value);
+    var secondnumber = parseInt(document.getElementById("secondnumber").value);
+    var total = (firstnumber + secondnumber);
+    // display total
+    //document.getElementById("totalMsg").innerHTML = "The total income is " + total;
+    if (total >= 10601)//greater than 50
+    {
+      var result = "As a couple, you won't benefit by £XXX.";
+    }
+    else if (total <= 10600)//less than 50
+    {
+      var result = "As a couple, you’ll benefit by £XXX.";
+    }
+    document.getElementById("result").innerHTML = "<div class='panel-indent your-details'>Based on the information you have given us:<br/>" + result +"</div>";
+  }
+  </script>
+
 <script language="JavaScript">
 function showDiv() {
    document.getElementById('sub3').style.display = "block";
 }
 </script>
 <style>
-
 .destination {
     color: #0b0c0c;
     display: block;
@@ -28,48 +48,53 @@ function showDiv() {
     max-width: 13em;
     text-transform: none;
 }
+.steps{
+  color:#6f777b;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.third {
+    width: 72%;
+}
+.form-control {
+    width: 30%;
+}
+.horizontal {
+  border-bottom: solid thin #6f777b;
+  margin-bottom: 20px;
+} 
 </style>
-
-
-
-
-<br><br>
-
 <main id="content" role="main">
-
-<div class="inner-block third">
-  <span class="form-hint">Step 1 of 4</span></label>
-  <h1 class="heading-xlarge">Marriage Allowance calculator</h1>
-  <p>As a couple, find out how much less tax you may pay if you transferred your Personal Allowance to your husband, wife or civil partner.
-
-</p>
-  <p>This should help you decide whether or not to apply.</p>
-
+  <div class="steps">Step 1 of 4</div>
+  <div class="inner-block third">
+    <h1 class="heading-xlarge">Marriage Allowance calculator</h1>
+    <p>As a couple, find out how much less tax you may pay if you transferred your Personal Allowance to your husband, wife or civil partner.</p>
+    <p>This should help you decide whether or not to apply.</p>
+    <!--Calc-->
+<form name = "frmCalc">
 <fieldset class="validate">
  <div class="form-group">
     <label class="form-label" for="first-name">Your annual income<br>
-      <span class="form-hint">Must be less than £10,600</span></label>
-    £&nbsp;<input class="form-control" id="first-name" type="text">
+      <span class="form-hint">Must be less than £10,600. No commas, spaces or decimal points.</span></label>
+    £&nbsp;<input class="form-control" id="firstnumber" name="firstnumber" type="text">
   </div>
   <div class="form-group" id="here">
     <label class="form-label" for="last-name-2">Your husband, wife or civil partner's annual income<br>
-    <span class="form-hint">Must be between £10,601 and £42,385</span></label>
-    £&nbsp;<input class="form-control" id="last-name-2" type="text">
+    <span class="form-hint">Must be between £10,601 and £42,385. No commas, spaces or decimal points.</span></label>
+    £&nbsp;<input class="form-control" id="secondnumber" name="secondnumber" type="text">
   </div>
-</fieldset>
 
-<div id="sub3" style="display:none;">
-  <p>Based on the information you have given us:</p>
-  <div class="panel-indent your-details">
-    <p>Your husband, wife or civil partner will benefit by £XXX.</p>
-<p>This amount may change depending your income and personal circumstances between now and the end of the tax year.</p>
-  </div>
-</div> 
-<input type="submit" id='bt1'  class="button next validation-submit" value="Calculate" onclick="showDiv()">
-<input type="submit" id='bt2'  class="button next validation-submit" value="Reset" onclick="hideDiv()">
+<p id="totalMsg"></p>
+<p id="result"></p>
+<input type="button" class="button next validation-submit" value="Calculate" onClick="calculate()">
+<button type="reset" class="button next validation-submit" value="Reset">Reset</button>
+<div class="horizontal">
+</div>
 </fieldset>
-<div>
-       <a href="app-form1_2" button class="button">Skip</a></div>
+</form>
+<div class="next">
+  <a href="app-verify1_3" button class="button">Next</a>
+</div>
 </main>
 
 {{/content}}

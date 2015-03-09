@@ -5,41 +5,41 @@
 
 {{$content}}
 
-
-
-<main id="content" role="main">
-
-     <style>
-    .third
-    {width:65%;}
-    .validate{padding-top: 10px;}
-    </style>
-<script type="text/javascript" language="JavaScript">
-
-<!--
-//--------------------------------
-// Quick Dirty Compare 2 fields for proto
-//--------------------------------
-function checkEmail(theForm) {
-    if (theForm.EMAIL1.value != theForm.EMAIL2.value)
-    {
-        //alert('NO MATCHY');
-        document.getElementById("emailMismatch").innerHTML = "<div class='validation-message'>Your email address does not match, please check and submit again</div>";
-        return false;
-    } else {
-        return true;
-    }
+<style>
+  .verify{
+  color:#424242;
+  padding-left:49.5%;
+  padding-top:20px;
 }
-//-->
-</script> 
+.third{
+width:72%
+}
+.validate{
+padding-top: 10px;
+}
+.steps{
+  color:#6f777b;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+hr
+{
+  width:63%;
+}
+
+</style>
+
+<div class="verify">JOHN SMITH you last signed in on Saturday 21 February 2015 <a href="#">Sign Out</a></div>
+<hr>
+<main id="content" role="main"><div class="steps">Step 3 of 4</div>
 <div class="inner-block third">
-  <span class="form-hint">Step 3 of 4</span></label>
+  
   <h1 class="heading-xlarge">Your husband, wife or civil partner's details</h1>
   <p>Provide details about your husband, wife of civil partner to set them up as a recipient of your Personal Allowance where you will be the transferor.</p>
   <p>Enter details about your husband, wife or civil partner.</p>
-<form class="form b" method="link" action="app-confirm1_3" onsubmit="return checkEmail(this);">
+<form class="form b" method="link" action="app-confirm1_3" >
 <fieldset class="validate">
- <div class="form-group">
+  <div class="form-group">
     <label class="form-label" for="first-name">Husband, wife or civil partner’s first name</label>
     <input class="form-control" id="first-name" type="text">
   </div>
@@ -47,43 +47,31 @@ function checkEmail(theForm) {
     <label class="form-label" for="last-name-2">Husband, wife or civil partner’s last name</label>
     <input class="form-control" id="last-name-2" type="text">
   </div>
-    <div class="form-group">
-            <fieldset class="validate " data-validation-name="gender" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="male female">
-            <label class="form-label" for="gender">Their gender</label>
 
-        <label for="gender_male" class="selectable selected">
-            <input type="radio" id="gender_male" name="gender.male" value="Male" class="radio  validate" data-validation-name="male" data-validation-type="field" data-validation-rules="nonEmpty">
-            Male
-        </label>
-
-                <label for="gender_female" class="selectable selected">
-            <input type="radio" id="gender_female" name="gender.male" value="Male" class="radio  validate" data-validation-name="female" data-validation-type="field" data-validation-rules="nonEmpty">
-            Female
-        </label>
-
-    </fieldset>
-  </div>
+<div class="form-group">
+ <fieldset class="inline"><label class="form-label" for="gender">Gender</label>
+    <label class="block-label" for="radio-inline-1">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+      Male
+    </label>
+    <label class="block-label" for="radio-inline-2">
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+      Female
+    </label>
+  </fieldset>
+ </div>
    <div class="form-group">
     <label class="form-label" for="email1">Their National Insurance (NI) number</label>
     <span class="form-hint">For example, QQ 12 34 56 C</span>
     <input class="form-control" name="EMAIL1" id="email1" type="text">
-  </div>
   <h2 class="heading-large">Confirmation email</h2>
-<p>We need to email confirmation of your application.</p>
+  <p>We need to email confirmation of your application.</p>
     <label class="form-label" for="email2">Your email</label>
     <input class="form-control" name="EMAIL2" id="email2" type="text">
   </div>
+  <a href="app-confirm1_3" button class="button">Submit</a>
 
 </fieldset>
-
-<fieldset class="inline">
-  <div class="form-group">
-<fieldset class="inline sub-section validate " data-validation-name="previousQuestion" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="yes-contact-me previousNo">
- <div class="form-group"> 
-    <input type="submit" class="button next validation-submit" value="Submit" onsubmit="return checkEmail(this);">
-  </div>
 </main>
-</fieldset>
-</fieldset>
 {{/content}}
 {{/layout}}
