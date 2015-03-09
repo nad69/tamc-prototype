@@ -425,7 +425,10 @@ module.exports = {
           res.render('tamc-app/app-form1_2verified', 
             {'assetPath' : assetPath });
       });   
-
+      app.get('/email', function (req, res) {
+          res.render('tamc-app/email', 
+            {'assetPath' : assetPath });
+      });   
     
 /***********/
 
