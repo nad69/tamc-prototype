@@ -15,7 +15,40 @@
     {{/pageTitle}}
    
     {{$content}}
- 
+ <div id="global-header-bar">
+      <div class="inner-block">
+ <style>
+.beta-label span.beta {
+background: none repeat scroll 0 0 #f47738;
+color: #fff;
+display: inline-block;
+font-family: "nta",Arial,sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 1;
+margin-right: 10px;
+padding: 5px 5px 2px 6px;
+text-transform: uppercase;
+}
+.capitals{
+  text-transform: uppercase;
+}
+</style>
+
+<div class="phase-banner">
+<div class="beta-label">
+<span class="beta">beta</span>
+This is a
+<a href="https://www.gov.uk/help/beta">trial service</a>
+. Help us improve it - send your
+<a href="contact/beta-feedback-unauthenticated">feedback</a>
+.
+</div>
+</div>
+        
+      </div>
+    </div>
+    <!--end global-header-bar-->
 <main id="content" role="main"><div id="content">
   {{>hmrc_banner}}
      <style>
@@ -33,7 +66,7 @@
         <h2 class="heading-large">Before you start</h2>
         <p>You’ll be able to claim Marriage Allowance if all the eligibility criteria apply:</p>
           <ul class="list-bullet">
-            <li>you’re married or in a <a href="xxxxxxxxxx">legally registered civil partnership</a></li> 
+            <li>you’re married or in a <a href="https://www.gov.uk/marriages-civil-partnerships/overview">legally registered civil partnership</a></li> 
             <li>you have an annual income of less than £10,600 - including pensions, savings and investments</li>
             <li>your spouse or civil partner has an annual income of between £10,601 and £42,385</li>
             <li>you were both born on or after 6 April 1935</li>
