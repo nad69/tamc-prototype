@@ -4,7 +4,38 @@
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
+<style type="text/css">
+#sub3 {
+display: none;
+}
+</style>
 
+  <script>
+  function calculate()
+  {
+    //3 variables, firstnumber, secondnumber and total
+    var firstnumber = parseInt(document.getElementById("firstnumber").value);
+    var secondnumber = parseInt(document.getElementById("secondnumber").value);
+    var total = (firstnumber + secondnumber);
+    // display total
+    //document.getElementById("totalMsg").innerHTML = "The total income is " + total;
+    if (total >= 10601)//greater than 
+    {
+      var result = "As a couple, you won't benefit by £XXX.";
+    }
+    else if (total <= 10601)//less than 50
+    {
+      var result = "As a couple, you’ll benefit by £XXX.";
+    }
+    document.getElementById("result").innerHTML = "<div class='panel-indent your-details'>Based on the information you have given us:<br/>" + result +"</div>";
+  }
+  </script>
+
+<script language="JavaScript">
+function showDiv() {
+   document.getElementById('sub3').style.display = "block";
+}
+</script>
 <style>
 .heading-xlarge {
 margin-top:0px;
@@ -97,7 +128,7 @@ This is a
 
 <p id="totalMsg"></p>
 <p id="result"></p>
-<input type="button" class="button next validation-submit" value="Calculate" >
+<input type="button" class="button next validation-submit" value="Calculate" onClick="calculate()">
 <button type="reset" class="button next validation-submit" value="Reset">Reset</button>
 <div class="horizontal">
 </div>
