@@ -435,11 +435,17 @@ app.get('/app-calc1_4', function (req, res) {
                           app.get('/app-exp1v4', function (req, res) {
           res.render('tamc-app/app-exp1v4', 
             {'assetPath' : assetPath });
-      });         
+      });
+                                app.get('/app-confirm1_4', function (req, res) {
+          res.render('tamc-app/app-confirm1_4', 
+            {'assetPath' : assetPath });
+      }); 
+                                      app.get('/app-finished1_4', function (req, res) {
+          res.render('tamc-app/app-finished1_4', 
+            {'assetPath' : assetPath });
+      });            
 
-              
-
-
+          
 
 /**IDA Paths AJC 16/12/14**/
       app.get('/app-ida1', function (req, res) {
