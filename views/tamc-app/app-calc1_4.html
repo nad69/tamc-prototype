@@ -1,0 +1,114 @@
+
+{{<layout}}
+
+{{$pageTitle}}Index{{/pageTitle}}
+
+{{$content}}
+
+
+<style>
+.heading-xlarge {
+margin-top:0px;
+}
+.destination {
+    color: #0b0c0c;
+    display: block;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-top: 0.5em;
+    max-width: 13em;
+    text-transform: none;
+}
+.steps{
+  color:#6f777b;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.third {
+    width: 72%;
+}
+.form-control {
+    width: 30%;
+}
+.horizontal {
+  border-bottom: solid thin #6f777b;
+  margin-bottom: 20px;
+  padding-top:20px;
+} 
+.push-button{
+  padding-top: 20px;
+  display:inline-block;
+}
+</style>
+<div id="global-header-bar">
+      <div class="inner-block">
+ <style>
+.beta-label span.beta {
+background: none repeat scroll 0 0 #f47738;
+color: #fff;
+display: inline-block;
+font-family: "nta",Arial,sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 1;
+margin-right: 10px;
+padding: 5px 5px 2px 6px;
+text-transform: uppercase;
+}
+.capitals{
+  text-transform: uppercase;
+}
+</style>
+
+<div class="phase-banner">
+<div class="beta-label">
+<span class="beta">beta</span>
+This is a
+<a href="https://www.gov.uk/help/beta">trial service</a>
+. Help us improve it - send your
+<a href="contact/beta-feedback-unauthenticated">feedback</a>
+.
+</div>
+</div>
+        
+      </div>
+    </div>
+    <!--end global-header-bar-->
+<main id="content" role="main">
+  <div class="steps">Step 1 of 4</div>
+  <div class="inner-block third">
+    <h1 class="heading-xlarge">Marriage Allowance calculator VGERSION 4</h1>
+    <p>As a couple, find out how much less tax you may pay if you transferred your Personal Allowance to your spouse or civil partner.</p>
+    <p>This should help you decide whether or not to apply.</p>
+    <!--Calc-->
+<form name = "frmCalc">
+<fieldset class="validate">
+ <div class="form-group">
+    <label class="form-label" for="first-name">Your annual income<br>
+      <span class="form-hint">Must be less than £10,600. <br/>No commas, spaces or decimal points.</span></label>
+    £&nbsp;<input class="form-control" id="firstnumber" name="firstnumber" type="text">
+  </div>
+  <div class="form-group" id="here">
+    <label class="form-label" for="last-name-2">Your spouse or civil partner's annual income
+    <span class="form-hint">Must be between £10,601 and £42,385. <br/>No commas, spaces or decimal points.</span></label>
+    £&nbsp;<input class="form-control" id="secondnumber" name="secondnumber" type="text">
+  </div>
+
+
+<div class='panel-indent your-details'>Based on the information you have given us, as a couple you would benefit by around £212.<br/></div>
+
+<input type="button" class="button next validation-submit" value="Calculate" >
+<button type="reset" class="button next validation-submit" value="Reset">Reset</button>
+<div class="horizontal">
+</div>
+</fieldset>
+</form>
+<div class="push-button">
+  <a href="app-verify1_3" button class="button">Next</a>
+</div>
+</main>
+
+{{/content}}
+{{/layout}}
