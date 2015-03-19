@@ -412,8 +412,18 @@ module.exports = {
           res.render('tamc-app/app-calc1_4', 
             {'assetPath' : assetPath });
       });
-
-
+       app.get('/app-form1_4', function (req, res) {
+          res.render('tamc-app/app-form1_4', 
+            {'assetPath' : assetPath });
+      });
+      app.get('/email_alertv4', function (req, res) {
+          res.render('tamc-app/email_alertv4', 
+            {'assetPath' : assetPath });
+      });
+       app.get('/app-verify1_4', function (req, res) {
+          res.render('tamc-app/app-verify1_4', 
+            {'assetPath' : assetPath });
+      });         
 
 
 /**IDA Paths AJC 16/12/14**/
