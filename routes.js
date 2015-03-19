@@ -420,6 +420,10 @@ app.get('/app-calc1_4', function (req, res) {
           res.render('tamc-app/email_alertv4', 
             {'assetPath' : assetPath });
       });
+            app.get('/emailv4', function (req, res) {
+          res.render('tamc-app/emailv4', 
+            {'assetPath' : assetPath });
+      });
        app.get('/app-verify1_4', function (req, res) {
           res.render('tamc-app/app-verify1_4', 
             {'assetPath' : assetPath });
