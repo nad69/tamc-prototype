@@ -449,7 +449,32 @@ app.get('/app-calc1_4', function (req, res) {
             {'assetPath' : assetPath });
       });            
 
-          
+/**1 April 2015 V.5**/
+            app.get('/app-start1_5', function (req, res) {
+          res.render('tamc-app/app-start1_5', 
+            {'assetPath' : assetPath });
+      });  
+      app.get('/app-calc1_5', function (req, res) {
+          res.render('tamc-app/app-calc1_5', 
+            {'assetPath' : assetPath });
+      });  
+             app.get('/app-verify1_5', function (req, res) {
+          res.render('tamc-app/app-verify1_5', 
+            {'assetPath' : assetPath });
+      });
+             app.get('/app-form1_5', function (req, res) {
+          res.render('tamc-app/app-form1_5', 
+            {'assetPath' : assetPath });
+      }); 
+      app.get('/app-confirm1_5', function (req, res) {
+          res.render('tamc-app/app-confirm1_5', 
+            {'assetPath' : assetPath });
+      }); 
+            app.get('/email_alertv5', function (req, res) {
+          res.render('tamc-app/email_alertv5', 
+            {'assetPath' : assetPath });
+      });
+                  
 
 /**IDA Paths AJC 16/12/14**/
       app.get('/app-ida1', function (req, res) {
