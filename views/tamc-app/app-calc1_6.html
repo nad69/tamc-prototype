@@ -61,7 +61,53 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 </style>
+    <style>
+    .third
+    {width:72%;
+    }
+    .rightside
+    {
+      float:right;
+      display:block;
+      width:23%;
+      margin-top:.3%;
+    }
+    .related {
+    border-top: 10px solid #005ea5;
+    padding-top: 5px;
+}
+.related h2 {
+    color: #0b0c0c;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    position: relative;
+    text-transform: none;
+}
+.related ul {
+    font-family: "nta",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-transform: none;
+}
+.related li a {
+    background-position: 0 -287px;
+    background-repeat: no-repeat;
+    display: block;
+    line-height: 1.25em;
+    orphans: 2;
+}
 
+
+    </style>
 <div class="phase-banner">
 <div class="beta-label">
 <span class="beta">beta</span>
@@ -78,7 +124,21 @@ This is a
     <!--end global-header-bar-->
 <main id="content" role="main">
   <div class="steps">Step 1 of 4</div>
+       <div class="rightside related">
+        <h2 id="parent-subsection">Useful links</h2>
+        <nav role="navigation" aria-labelledby="parent-subsection">
+          <ul>
+            <li><a href="#">What does income include?</a></li>
+            <li><a href="#">What is Personal Allowance?</a></li>
+            <li><a href="#">What is Marriage Allowance?</a></li>
+            <li><a href="#">Calculate what you'll get</a></li>
+          </ul>
+        </nav>
+      </div>
   <div class="inner-block third">
+
+
+
     <h1 class="heading-xlarge">Calculate what you'll get</h1>
     <p>This step is optional, <a href="app-verify1_6">skip it</a></p>
     <p>As a couple, find out how much less tax you may pay if you transferred your Personal Allowance to your spouse or civil partner.</p>
@@ -99,17 +159,13 @@ This is a
   </div>
 
 
-<div class='panel-indent your-details'>Based on the information you have given us, as a couple you would benefit by around <strong>£212</strong> a year. </div>
-
 <input type="button" class="button next validation-submit" value="Calculate" >
 <div class="horizontal">
-
 </div>
 </fieldset>
 </form>
 <div class="push-button">
-  <a href="app-verify1_5" button class="button">Next</a>
-
+  <a href="app-verify1_6" button class="button">Next</a>
 
 </div>
 </main>

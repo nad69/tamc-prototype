@@ -1,0 +1,137 @@
+{{<govuk_template}}
+    {{$head}}
+      {{>head}}
+      <!-- Additional head code, CSS, JS specific only to this file here. If needed on other screens consider moving to separate file -->
+    {{/head}}
+   
+    {{$headerClass}}with-proposition{{/headerClass}}
+   
+    {{$footerTop}}
+                {{>footer_links}}
+    {{/footerTop}}
+   
+    {{$pageTitle}}
+        Start
+    {{/pageTitle}}
+   
+    {{$content}}
+ <div id="global-header-bar">
+      <div class="inner-block">
+ <style>
+.beta-label span.beta {
+background: none repeat scroll 0 0 #f47738;
+color: #fff;
+display: inline-block;
+font-family: "nta",Arial,sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 1;
+margin-right: 10px;
+padding: 5px 5px 2px 6px;
+text-transform: uppercase;
+}
+.capitals{
+  text-transform: uppercase;
+}
+</style>
+
+<div class="phase-banner">
+  <div class="beta-label">
+    <span class="beta">beta</span>This is a <a href="https://www.gov.uk/help/beta">trial service</a> Help us improve it - send your<a href="contact/beta-feedback-unauthenticated">feedback</a>.
+  </div>
+</div>
+        
+      </div>
+    </div>
+    <!--end global-header-bar-->
+<main id="content" role="main"><div id="content">
+  {{>hmrc_banner}}
+     <style>
+    .third
+    {width:72%;
+    }
+    .rightside
+    {
+      float:right;
+      display:block;
+      width:23%;
+      margin-top:3.3%;
+    }
+    .related {
+    border-top: 10px solid #005ea5;
+    padding-top: 5px;
+}
+.related h2 {
+    color: #0b0c0c;
+    font-family: "nta",Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    position: relative;
+    text-transform: none;
+}
+.related ul {
+    font-family: "nta",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-transform: none;
+}
+.related li a {
+    background-position: 0 -287px;
+    background-repeat: no-repeat;
+    display: block;
+    line-height: 1.25em;
+    orphans: 2;
+}
+
+
+    </style>
+  <div class="grid-wrapper">
+    <div class="grid grid 4-3-4">
+      <div class="rightside related">
+        <h2 id="parent-subsection">Useful links</h2>
+        <nav role="navigation" aria-labelledby="parent-subsection">
+          <ul>
+            <li><a href="#">What does income include?</a></li>
+            <li><a href="#">What is Personal Allowance?</a></li>
+            <li><a href="#">What is Marriage Allowance?</a></li>
+            <li><a href="#">Calculate what you'll get</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="inner-block third">
+        <h1 class="heading-xlarge">Apply for Marriage Allowance</h1>
+        <p>For the tax year 2015 to 2016, most people will be able to earn up to £10,600 a year before paying tax on their <a href="https://www.gov.uk/income-tax/overview">income</a> which includes pensions, savings and investments. This is called a <a href="https://www.gov.uk/income-tax-rates">Personal Allowance</a>.</p><p>If your income is £10,600 or less (£880 a month), Marriage Allowance lets you transfer £1,060 of your Personal Allowance to your spouse or civil partner.</p>
+        
+        <div class="panel-indent"><p>This may reduce the amount of tax they pay each week or month and could be worth up to £212 a year. </p></div>
+        
+        <h2 class="heading-large">Before you start</h2>
+        <p>You'll be able to transfer some of your Personal Allowance to your partner if:</p>
+          <ul class="list-bullet">
+            <li>you’re married or in a <a href="https://www.gov.uk/marriages-civil-partnerships/overview">legally registered civil partnership</a></li> 
+            <li>you have an annual income of £10,600 or less - including pensions, savings and investments</li>
+            <li>your spouse or civil partner has an annual income of between £10,601 and £42,385</li>
+            <li>you were both born on or after 6 April 1935</li>
+          </ul>
+          <h2 class="heading-large">Steps to apply for Marriage Allowance</h2>
+        <p><b>1.</b> You can use the Marriage Allowance calculator (optional) to see how much you may benefit as a couple. 
+        <p><b>2.</b> You'll need to verify your identity with GOV.UK Verify.</p>
+        <p><b>3.</b> Give us your spouse of civil partner's details to make the transfer to them (you'll need their first name, last name and National Insurance number).</p>
+        <p><b>4.</b> Confirm your spouse or civil partner's details and apply.</p>
+        <!--<h1 class="heading-large">Marriage Allowance calculator</h1>
+        <p>You can use the <a href="app-calc1_3.html">calculator</a> to see how much you can reduce your spouse or civil partner's tax by.</p>*/-->
+
+           <div class="panel-indent">You must verify your identity to use this service and other government digital services. It may take up to 20 minutes if you are verifying your identity for the first time. You'll get an email confirmation of your claim.</div>
+        <a href="app-calc1_6" button class="button button-get-started">Start now</a>
+   <p>on the Marriage Allowance application service </p>
+</main>
+
+{{/content}}
+{{/govuk_template}}
