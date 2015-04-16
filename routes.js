@@ -536,7 +536,14 @@ app.get('/app-calc1_4', function (req, res) {
             app.get('/email_alert6', function (req, res) {
           res.render('tamc-app/email_alert6', 
             {'assetPath' : assetPath });
-      });                
+      });
+                  app.get('/email_alert6_5', function (req, res) {
+          res.render('tamc-app/email_alert6_5', 
+            {'assetPath' : assetPath });
+      }); 
+
+
+                  
 
 /**IDA Paths AJC 16/12/14**/
       app.get('/app-ida1', function (req, res) {
