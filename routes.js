@@ -521,8 +521,16 @@ app.get('/app-calc1_4', function (req, res) {
           res.render('tamc-app/app-form1_6', 
             {'assetPath' : assetPath });
       }); 
-      app.get('/app-confirm1_6', function (req, res) {
-          res.render('tamc-app/app-confirm1_6', 
+      app.get('/app-confirm1_6a', function (req, res) {
+          res.render('tamc-app/app-confirm1_6a', 
+            {'assetPath' : assetPath });
+      }); 
+      app.get('/app-confirm1_6b', function (req, res) {
+          res.render('tamc-app/app-confirm1_6b', 
+            {'assetPath' : assetPath });
+      }); 
+      app.get('/app-confirm1_6c', function (req, res) {
+          res.render('tamc-app/app-confirm1_6c', 
             {'assetPath' : assetPath });
       });
        app.get('/app-finished1_6', function (req, res) {
@@ -542,6 +550,80 @@ app.get('/app-calc1_4', function (req, res) {
             {'assetPath' : assetPath });
       }); 
 
+ /**29 April 2015 V.6**/
+            app.get('/app-start1_7', function (req, res) {
+          res.render('tamc-app/app-start1_7', 
+            {'assetPath' : assetPath });
+      });  
+            app.get('/app-calc1_7', function (req, res) {
+          res.render('tamc-app/app-calc1_7', 
+            {'assetPath' : assetPath });
+      });
+            app.get('/app-ida-pro6', function (req, res) {
+          res.render('tamc-app/app-ida-pro6', 
+            {'assetPath' : assetPath });
+      });   
+                  app.get('/app-ida1v4-pro6', function (req, res) {
+          res.render('tamc-app/app-ida1v4-pro6', 
+            {'assetPath' : assetPath });
+      }); 
+                        app.get('/app-exp1v4-pro6', function (req, res) {
+          res.render('tamc-app/app-exp1v4-pro6', 
+            {'assetPath' : assetPath });
+      }); 
+                
+           app.get('/app-calc-benefit', function (req, res) {
+          res.render('tamc-app/app-calc-benefit', 
+            {'assetPath' : assetPath });
+      });
+                        app.get('/app-calc-notbenefit', function (req, res) {
+          res.render('tamc-app/app-calc-notbenefit', 
+            {'assetPath' : assetPath });
+      });
+                  app.get('/app-calc-noteligible', function (req, res) {
+          res.render('tamc-app/app-calc-noteligible', 
+            {'assetPath' : assetPath });
+      });    
+             app.get('/app-verify1_7', function (req, res) {
+          res.render('tamc-app/app-verify1_7', 
+            {'assetPath' : assetPath });
+      });
+             app.get('/app-form1_7', function (req, res) {
+          res.render('tamc-app/app-form1_7', 
+            {'assetPath' : assetPath });
+      }); 
+            app.get('/app-form1_7b', function (req, res) {
+          res.render('tamc-app/app-form1_7b', 
+            {'assetPath' : assetPath });
+      }); 
+            app.get('/app-form1_7c', function (req, res) {
+          res.render('tamc-app/app-form1_7c', 
+            {'assetPath' : assetPath });
+      }); 
+           app.get('/app-confirm1_7', function (req, res) {
+          res.render('tamc-app/app-confirm1_7', 
+            {'assetPath' : assetPath });
+      }); 
+           app.get('/app-confirm1_7c', function (req, res) {
+          res.render('tamc-app/app-confirm1_7c', 
+            {'assetPath' : assetPath });
+      }); 
+           app.get('/app-confirm1_7d', function (req, res) {
+          res.render('tamc-app/app-confirm1_7d', 
+            {'assetPath' : assetPath });
+      });
+       app.get('/app-finished1_7', function (req, res) {
+          res.render('tamc-app/app-finished1_7', 
+            {'assetPath' : assetPath });
+      });  
+                   app.get('/emailv7', function (req, res) {
+          res.render('tamc-app/emailv7', 
+            {'assetPath' : assetPath });
+      });
+            app.get('/email_conf7', function (req, res) {
+          res.render('tamc-app/email_conf7', 
+            {'assetPath' : assetPath });
+      });
 
                   
 
