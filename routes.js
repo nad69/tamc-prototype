@@ -600,8 +600,16 @@ app.get('/app-calc1_4', function (req, res) {
           res.render('tamc-app/app-form1_7c', 
             {'assetPath' : assetPath });
       }); 
+            app.get('/app-form1_7d', function (req, res) {
+          res.render('tamc-app/app-form1_7d', 
+            {'assetPath' : assetPath });
+      }); 
            app.get('/app-confirm1_7', function (req, res) {
           res.render('tamc-app/app-confirm1_7', 
+            {'assetPath' : assetPath });
+      }); 
+           app.get('/app-confirm1_7b', function (req, res) {
+          res.render('tamc-app/app-confirm1_7b', 
             {'assetPath' : assetPath });
       }); 
            app.get('/app-confirm1_7c', function (req, res) {
