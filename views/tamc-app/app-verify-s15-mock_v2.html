@@ -4,6 +4,33 @@
 {{$pageTitle}}Index{{/pageTitle}}
 
 {{$content}}
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+.steps{
+  float:right;
+  padding-right:860px;
+   font-size: 16px;
+       color: #6f777b;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#radio-inline-1").click(function(){
+    $("#earn-less").show();
+    $("#earn-more").hide();
+  });
+  $("#radio-inline-2").click(function(){
+    $("#earn-less").hide();
+    $("#earn-more").show();
+  });
+});
+</script>
+
+
+
 <style>
 .heading-xlarge {
 margin-top:0px;
@@ -52,35 +79,6 @@ text-transform: uppercase;
     border-top: 10px solid #005ea5;
     padding-top: 5px;
 }
-.related h2 {
-    color: #0b0c0c;
-    font-family: "nta",Arial,sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.25;
-    margin-bottom: 0.5em;
-    margin-top: 0.3em;
-    position: relative;
-    text-transform: none;
-}
-.related ul {
-    font-family: "nta",Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    list-style: outside none none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    text-transform: none;
-}
-.related li a {
-    background-position: 0 -287px;
-    background-repeat: no-repeat;
-    display: block;
-    line-height: 1.25em;
-    orphans: 2;
-}
 
 .ma-boost{
   font-weight: bold;
@@ -114,7 +112,24 @@ This is a
   <div class="steps">Step 2 of 4</div>
 <div class="inner-block third">
   <h1 class="heading-xlarge">Choose an option<br>to verify your identity (v2)*</h1>
-    <h1 class="heading-medium">1. Verify to use all online government services</h1>
+  <p>Add whatever you want here</p>
+
+<h1 class="heading-medium">1. Verify to use all online government services</h1>
+<fieldset class="inline">
+    <div class="form-group">
+    <label class="block-label" for="radio-inline-1">
+    <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Verify to use all online government services
+    </label>
+      <h1 class="heading-medium">2. Verify with HMRC to apply for Marriage Allowance only</h1>
+    <label class="block-label" for="radio-inline-2">
+    <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">Verify with HMRC to apply for Marriage Allowance only
+    </label>
+    <p>If you'd prefer to simply answer some security questions directly with HMRC, you can do this instead.</p>
+    </div>
+  </fieldset>
+  <fieldset class="inline">
+    <div id="earn-less" style="display:none">
+          <div class="panel-indent">
 <p>To transfer your Personal Allowance to your spouse or civil partner online, you'll need to use <a href="https://www.gov.uk/government/publications/introducing-govuk-verify/introducing-govuk-verify">GOV.UK Verify</a> - the new way for you to prove who you are online, so you can use government services safely.</p>
 <p>To do this, you'll need to choose a certified company who will ask questions that only you know the answer to.</p>
 <p>You only have to verify your identity once. After that you can sign in with your username and password and use these to sign into other online government services.</p>
@@ -122,21 +137,15 @@ This is a
     <p class="ma-boost">Before you continue, remember it's the person on the lower income making the transfer who should be verifying their identity.</p>
     </div>
 <a href="#" button class="button" >Verify now</a>
-
- <div class="panel-indent">If you can't use GOV.UK Verify you can still apply for Marriage Allowance online by verifying your identity with HMRC (option 2) or by telephone. You'll be given the telephone option if you can't verify your identity online.</div>
-
-  <h1 class="heading-medium">2. Verify with HMRC to apply for Marriage Allowance only</h1>
-<p>If you'd prefer to simply answer some security questions directly with HMRC, you can do this instead.</p>
-    <div class="application-notice help-notice">
-    <p class="ma-boost">Before you continue, remember it's the person on the lower income making the transfer who should be verifying their identity.</p>
+<div class="panel-indent">If you can't use GOV.UK Verify you can still apply for Marriage Allowance online by verifying your identity with HMRC (option 2) or by telephone. You'll be given the telephone option if you can't verify your identity online.</div>
     </div>
-
-<a href="#" button class="button" >Verify with HMRC</a>
-      
-            <!--<a href="http://pirate:bunting@govuk-verify-test.herokuapp.com/intro?requestId=marriage-allowance" button class="button" >Verify now</a>-->
-    </p>  
-       <!--<a href="app-form1_2" button class="button">Continue to application form</a>*/-->
-</fieldset>
+  </fieldset>
+  <fieldset class="inline">
+  <div id="earn-more" style="display:none">
+      <a href="calc2" button class="button">Next</a>
+    </div>
+  </div>
+  </fieldset>
 </main>
 
 {{/content}}
