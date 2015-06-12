@@ -633,6 +633,18 @@ app.get('/app-calc1_4', function (req, res) {
             {'assetPath' : assetPath });
       });
 
+
+/**11 June 2015 Verify page mockups**/
+            app.get('/app-verify-s15-mock_v1', function (req, res) {
+          res.render('tamc-app/app-verify-s15-mock_v1', 
+            {'assetPath' : assetPath });
+      }); 
+
+            app.get('/app-verify-s15-mock_v2', function (req, res) {
+          res.render('tamc-app/app-verify-s15-mock_v2', 
+            {'assetPath' : assetPath });
+      });
+
                   
 
 /**IDA Paths AJC 16/12/14**/
